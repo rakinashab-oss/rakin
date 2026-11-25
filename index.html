@@ -1,2693 +1,1275 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>MD. Rakin Ashab | Digital Entrepreneur, Tech Enthusiast &amp; Hospitality Professional</title>
-  <meta name="description" content="Portfolio of MD. Rakin Ashab — Founder of ONE STOP SOLUTION, curious tech explorer, and Hospitality &amp; Client Relations Professional based in Dhaka, Bangladesh.">
-  <meta name="author" content="MD. Rakin Ashab">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.rakin.online/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD. Rakin Ashab | Entrepreneur, Hospitality & Digital Strategist</title>
+  <meta name="description" content="Official personal portfolio of MD. Rakin Ashab — Entrepreneur, Hospitality Student, and Tech Enthusiast based in Dhaka, Bangladesh." />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.rakin.online/">
-  <meta property="og:title" content="MD. Rakin Ashab | Digital Entrepreneur, Tech Enthusiast &amp; Hospitality Professional">
-  <meta property="og:description" content="Founder of ONE STOP SOLUTION, curious tech explorer, and Hospitality &amp; Client Relations Professional based in Dhaka, Bangladesh.">
-  <meta property="og:image" content="https://www.rakin.online/images/formal-1.jpg">
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display for an editorial, executive look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,400;1,500&display=swap" rel="stylesheet" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://www.rakin.online/">
-  <meta name="twitter:title" content="MD. Rakin Ashab | Digital Entrepreneur, Tech Enthusiast &amp; Hospitality Professional">
-  <meta name="twitter:description" content="Founder of ONE STOP SOLUTION, curious tech explorer, and Hospitality &amp; Client Relations Professional based in Dhaka, Bangladesh.">
-  <meta name="twitter:image" content="https://www.rakin.online/images/formal-1.jpg">
-
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#F7F5F0" id="meta-theme-color">
-
-  <!-- Favicon: Inline SVG with MRA Monogram -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231E3F30'/><text x='32' y='41' font-family='Georgia,serif' font-size='22' font-weight='600' letter-spacing='1.5' fill='%23F7F5F0' text-anchor='middle'>MRA</text></svg>">
-
-  <!-- Editorial Typography (Fraunces + Plus Jakarta Sans + JetBrains Mono) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Structured Data: JSON-LD Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "MD. Rakin Ashab",
-    "alternateName": "Rakin Ashab",
-    "url": "https://www.rakin.online",
-    "email": "contact@rakin.online",
-    "telephone": "+8801936106621",
-    "jobTitle": "Founder & Digital Agency Director",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "ONE STOP SOLUTION"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Dhaka",
-      "addressCountry": "BD"
-    },
-    "sameAs": [
-      "https://github.com/rakinashab-oss",
-      "https://www.linkedin.com/in/mohammad-rakin-ashab-54082421a",
-      "https://www.instagram.com/rakin_ashab",
-      "https://wa.me/8801936106621"
-    ]
-  }
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Newsreader"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#FAF8F5',
+              100: '#F4EFE6',
+              200: '#E8DEC9',
+              300: '#D5C4A1',
+              400: '#C2A775',
+              500: '#B08D4C',
+              600: '#947238',
+              700: '#755729',
+              800: '#5A421F',
+              900: '#3D2C15',
+            },
+            slatebg: {
+              950: '#070A0F',
+              900: '#0B111A',
+              850: '#0F1726',
+              800: '#152033',
+              700: '#1E2D47',
+              600: '#2A3C5C',
+            }
+          },
+          backgroundImage: {
+            'radial-glow': 'radial-gradient(circle at 50% 0%, rgba(194, 167, 117, 0.12) 0%, transparent 65%)',
+            'radial-accent': 'radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 50%)',
+          }
+        }
+      }
+    };
   </script>
 
   <style>
-    /* -------------------------------------------------------------
-       DESIGN TOKENS & CSS VARIABLES
-       Restrained, human-crafted palette with warm paper & ink
-       ------------------------------------------------------------- */
-    :root {
-      --bg: #F7F5F0;               /* Warm archival paper */
-      --surface: #FFFFFF;          /* Pure card/container surface */
-      --surface-tint: #F1EEE7;     /* Elevated subtle surface */
-      --surface-border: #E4DFD5;   /* Hairline rule */
-      --text: #161513;             /* Near-black ink */
-      --text-muted: #5C5953;       /* Editorial secondary text */
-      --text-faint: #8E8980;       /* Fine caption & rule labels */
-      
-      /* Single Muted Accent: Deep British Forest Green */
-      --accent: #1E3F30;           
-      --accent-hover: #295541;
-      --accent-soft: rgba(30, 63, 48, 0.08);
-      --accent-contrast: #FFFFFF;
-
-      --font-display: 'Fraunces', Georgia, serif;
-      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
-
-      --space-xs: 0.5rem;
-      --space-sm: 0.875rem;
-      --space-md: 1.5rem;
-      --space-lg: 2.5rem;
-      --space-xl: 4.5rem;
-      --space-2xl: 7rem;
-
-      --radius-sm: 4px;
-      --radius-md: 8px;
-      --radius-lg: 14px;
-      --radius-full: 9999px;
-
-      --max-width: 1200px;
-      --header-height: 72px;
-
-      --transition-base: 220ms cubic-bezier(0.16, 1, 0.3, 1);
-      --shadow-subtle: 0 4px 20px -2px rgba(22, 21, 19, 0.05);
-      --shadow-hover: 0 12px 32px -4px rgba(22, 21, 19, 0.09);
-    }
-
-    [data-theme="dark"] {
-      --bg: #121211;               /* Deep charcoal parchment */
-      --surface: #181816;          /* Dark card surface */
-      --surface-tint: #20201D;     /* Raised dark element */
-      --surface-border: #2C2A26;   /* Subtle dark hairline */
-      --text: #ECEAE4;             /* Soft parchment ink */
-      --text-muted: #A39E94;       /* Muted ash */
-      --text-faint: #6A665E;       /* Faint dark caption */
-
-      --accent: #4E8669;           /* Sage green highlight */
-      --accent-hover: #5F9E7D;
-      --accent-soft: rgba(78, 134, 105, 0.16);
-      --accent-contrast: #121211;
-
-      --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
-      --shadow-hover: 0 12px 32px -4px rgba(0, 0, 0, 0.45);
-    }
-
-    /* Base Reset & Core Styles */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-      background-color: var(--bg);
-      color: var(--text);
-      transition: background-color var(--transition-base), color var(--transition-base);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    body {
-      font-family: var(--font-body);
-      line-height: 1.65;
-      color: var(--text);
-      background-color: var(--bg);
-      overflow-x: hidden;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    ::selection {
-      background-color: var(--accent);
-      color: var(--accent-contrast);
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      transition: color var(--transition-base);
-    }
-
-    button {
-      font-family: inherit;
-      cursor: pointer;
-      border: none;
-      background: none;
-      color: inherit;
-    }
-
-    input, textarea, select {
-      font-family: inherit;
-      font-size: 1rem;
-      color: var(--text);
-    }
-
-    :focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 3px;
-    }
-
-    /* Utility Container */
-    .container {
-      width: 100%;
-      max-width: var(--max-width);
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: clamp(1.25rem, 4vw, 2.5rem);
-      padding-right: clamp(1.25rem, 4vw, 2.5rem);
-    }
-
-    /* Small Caps Section Marker */
-    .section-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.65rem;
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      font-weight: 500;
-      margin-bottom: 0.85rem;
-    }
-
-    .section-eyebrow::before {
-      content: "";
-      display: inline-block;
-      width: 16px;
-      height: 1px;
-      background-color: currentColor;
-    }
-
-    .section-heading {
-      font-family: var(--font-display);
-      font-size: clamp(2rem, 4.2vw, 3.25rem);
-      font-weight: 450;
-      line-height: 1.18;
-      letter-spacing: -0.02em;
-      color: var(--text);
-      margin-bottom: 1.25rem;
-    }
-
-    .section-lead {
-      font-size: 1.0625rem;
-      line-height: 1.7;
-      color: var(--text-muted);
-      max-width: 64ch;
-    }
-
-    .editorial-underline {
-      position: relative;
-      display: inline-block;
-      white-space: nowrap;
-    }
-
-    .editorial-underline::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 2px;
-      width: 100%;
-      height: 2px;
-      background-color: var(--accent);
-      opacity: 0.8;
-      transform-origin: left;
-    }
-
-    /* Hairline Divider */
-    .divider {
-      height: 1px;
-      width: 100%;
-      background: var(--surface-border);
-      border: none;
-      margin: 0;
-    }
-
-    /* -------------------------------------------------------------
-       HEADER & NAVIGATION (Sticky, Accessible, Blur-Free)
-       ------------------------------------------------------------- */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      height: var(--header-height);
-      background-color: var(--bg);
-      border-bottom: 1px solid var(--surface-border);
-      transition: background-color var(--transition-base), border-color var(--transition-base);
-    }
-
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-    }
-
-    .brand-mark {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-family: var(--font-display);
-      font-size: 1.125rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      color: var(--text);
-    }
-
-    .monogram-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      border-radius: var(--radius-sm);
-      background-color: var(--accent);
-      color: var(--accent-contrast);
-      font-family: var(--font-display);
-      font-size: 0.8125rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-    }
-
-    .brand-name {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .brand-name-full {
-      font-size: 1.05rem;
-      line-height: 1.1;
-      font-weight: 600;
-    }
-
-    .brand-name-sub {
-      font-family: var(--font-mono);
-      font-size: 0.6875rem;
-      color: var(--text-muted);
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      font-weight: 400;
-    }
-
-    .nav-desktop {
-      display: none;
-    }
-
-    @media (min-width: 960px) {
-      .nav-desktop {
-        display: flex;
-        align-items: center;
-        gap: 1.75rem;
-      }
-    }
-
-    .nav-link {
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      position: relative;
-      padding: 0.5rem 0;
-      transition: color var(--transition-base);
-    }
-
-    .nav-link:hover {
-      color: var(--text);
-    }
-
-    .nav-link.active {
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    .nav-link.active::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: var(--accent);
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-
-    .theme-toggle-btn {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-md);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--surface-border);
-      background: var(--surface);
-      color: var(--text);
-      transition: all var(--transition-base);
-    }
-
-    .theme-toggle-btn:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    .btn-header-cta {
-      display: none;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.55rem 1.1rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.875rem;
-      font-weight: 600;
-      background-color: var(--accent);
-      color: var(--accent-contrast);
-      transition: background-color var(--transition-base), transform var(--transition-base);
-      min-height: 44px;
-    }
-
-    @media (min-width: 640px) {
-      .btn-header-cta {
-        display: inline-flex;
-      }
-    }
-
-    .btn-header-cta:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(-1px);
-    }
-
-    .mobile-menu-toggle {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--surface-border);
-      background-color: var(--surface);
-      color: var(--text);
-    }
-
-    @media (min-width: 960px) {
-      .mobile-menu-toggle {
-        display: none;
-      }
-    }
-
-    /* Mobile Navigation Drawer */
-    .mobile-drawer {
-      position: fixed;
-      top: var(--header-height);
-      left: 0;
-      right: 0;
-      background-color: var(--bg);
-      border-bottom: 1px solid var(--surface-border);
-      padding: 1.5rem 1.5rem 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      transform: translateY(-120%);
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 99;
-      box-shadow: var(--shadow-hover);
-    }
-
-    .mobile-drawer.is-open {
-      transform: translateY(0);
-    }
-
-    .mobile-nav-link {
-      font-family: var(--font-display);
-      font-size: 1.35rem;
-      font-weight: 500;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.5rem 0;
-      border-bottom: 1px solid var(--surface-border);
-    }
-
-    .mobile-nav-link span.num {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-faint);
-    }
-
-    /* -------------------------------------------------------------
-       HERO SECTION (Editorial Asymmetry, Clean Monogram, Rotating)
-       ------------------------------------------------------------- */
-    .hero-section {
-      padding-top: clamp(2.5rem, 6vw, 4.5rem);
-      padding-bottom: clamp(3rem, 7vw, 5.5rem);
-      position: relative;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
-      align-items: start;
-    }
-
-    @media (min-width: 992px) {
-      .hero-grid {
-        grid-template-columns: 1.3fr 0.9fr;
-        gap: 4rem;
-      }
-    }
-
-    .status-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      padding: 0.35rem 0.85rem;
-      border-radius: var(--radius-full);
-      background-color: var(--accent-soft);
-      border: 1px solid rgba(30, 63, 48, 0.2);
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: var(--accent);
-      margin-bottom: 1.5rem;
-    }
-
-    [data-theme="dark"] .status-pill {
-      border-color: rgba(78, 134, 105, 0.3);
-    }
-
-    .status-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background-color: var(--accent);
-      display: inline-block;
-    }
-
-    .hero-headline {
-      font-family: var(--font-display);
-      font-size: clamp(2.6rem, 5.5vw, 4.25rem);
-      font-weight: 500;
-      line-height: 1.08;
-      letter-spacing: -0.025em;
-      color: var(--text);
-      margin-bottom: 1.15rem;
-    }
-
-    /* Rotating Subtitle with smooth text-swap fade */
-    .rotating-subtitle-wrapper {
-      font-family: var(--font-mono);
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
-      font-weight: 500;
-      color: var(--accent);
-      letter-spacing: -0.01em;
-      min-height: 1.7em;
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .rotating-text {
-      display: inline-block;
-      transition: opacity 0.35s ease, transform 0.35s ease;
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .rotating-text.is-changing {
-      opacity: 0;
-      transform: translateY(6px);
-    }
-
-    .hero-intro {
-      font-size: clamp(1.05rem, 1.3vw, 1.1875rem);
-      line-height: 1.75;
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-      max-width: 62ch;
-    }
-
-    .hero-ctas {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.85rem 1.75rem;
-      font-size: 0.9375rem;
-      font-weight: 600;
-      border-radius: var(--radius-sm);
-      min-height: 48px;
-      transition: all var(--transition-base);
-    }
-
-    .btn-primary {
-      background-color: var(--accent);
-      color: var(--accent-contrast);
-    }
-
-    .btn-primary:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(30, 63, 48, 0.2);
-    }
-
-    .btn-outline {
-      background-color: transparent;
-      color: var(--text);
-      border: 1px solid var(--surface-border);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background-color: var(--surface);
-      transform: translateY(-2px);
-    }
-
-    /* Social Links with thin clean line icons */
-    .hero-socials {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--surface-border);
-    }
-
-    .social-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--surface-border);
-      background-color: var(--surface);
-      color: var(--text-muted);
-      transition: all var(--transition-base);
-    }
-
-    .social-link:hover {
-      color: var(--accent);
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .hero-aside-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      padding: 2rem;
-      box-shadow: var(--shadow-subtle);
-      position: relative;
-    }
-
-    .hero-aside-card::before {
-      content: "01";
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      color: var(--text-faint);
-    }
-
-    .aside-headline {
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 1.25;
-      margin-bottom: 1rem;
-      color: var(--text);
-    }
-
-    .aside-quote {
-      font-size: 0.9375rem;
-      line-height: 1.65;
-      color: var(--text-muted);
-      margin-bottom: 1.75rem;
-    }
-
-    .quick-meta-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      font-size: 0.875rem;
-      border-top: 1px solid var(--surface-border);
-      padding-top: 1.25rem;
-    }
-
-    .quick-meta-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-
-    .quick-meta-label {
-      font-family: var(--font-mono);
-      color: var(--text-faint);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .quick-meta-val {
-      font-weight: 500;
-      color: var(--text);
-      text-align: right;
-    }
-
-    /* -------------------------------------------------------------
-       SECTION 01: ABOUT (Pillars + Framed Editorial Photos + Stats)
-       ------------------------------------------------------------- */
-    .section-about {
-      padding-top: clamp(3.5rem, 7vw, 6rem);
-      padding-bottom: clamp(3.5rem, 7vw, 6rem);
-    }
-
-    .about-lead-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-bottom: 3.5rem;
-    }
-
-    @media (min-width: 900px) {
-      .about-lead-grid {
-        grid-template-columns: 1.1fr 1fr;
-        gap: 4rem;
-      }
-    }
-
-    .about-lead-body p {
-      font-size: 1.0625rem;
-      line-height: 1.75;
-      color: var(--text-muted);
-      margin-bottom: 1.25rem;
-    }
-
-    .about-lead-body p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* Pillars with Editorial Photos */
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-bottom: 4rem;
-    }
-
-    @media (min-width: 860px) {
-      .pillars-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .pillar-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform var(--transition-base), box-shadow var(--transition-base);
-    }
-
-    .pillar-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .pillar-media {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      background-color: var(--surface-tint);
-      overflow: hidden;
-      border-bottom: 1px solid var(--surface-border);
-    }
-
-    .pillar-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s ease;
-    }
-
-    .pillar-card:hover .pillar-media img {
-      transform: scale(1.03);
-    }
-
-    .pillar-media-formal-1 img {
-      object-position: center 25%;
-    }
-
-    .pillar-media-formal-2 img {
-      object-position: center 30%;
-    }
-
-    .pillar-caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
-      padding: 0.75rem 1rem 0.5rem;
-      color: #FFFFFF;
-      font-family: var(--font-mono);
-      font-size: 0.6875rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .pillar-content {
-      padding: 1.75rem 1.5rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .pillar-num {
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .pillar-title {
-      font-family: var(--font-display);
-      font-size: 1.35rem;
-      font-weight: 500;
-      line-height: 1.25;
-      margin-bottom: 0.75rem;
-      color: var(--text);
-    }
-
-    .pillar-desc {
-      font-size: 0.9375rem;
-      line-height: 1.6;
-      color: var(--text-muted);
-    }
-
-    /* Stats Row with Live Animate Counters */
-    .stats-strip {
-      background-color: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      padding: 2.25rem 1.5rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.75rem;
-    }
-
-    @media (min-width: 768px) {
-      .stats-strip {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 2.5rem 2rem;
-      }
-    }
-
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-
-    @media (min-width: 768px) {
-      .stat-item:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 10%;
-        height: 80%;
-        width: 1px;
-        background-color: var(--surface-border);
-      }
-    }
-
-    .stat-value {
-      font-family: var(--font-display);
-      font-size: clamp(2.25rem, 3.8vw, 3.25rem);
-      font-weight: 600;
-      line-height: 1.1;
-      color: var(--accent);
-      margin-bottom: 0.35rem;
-    }
-
-    .stat-label {
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    /* -------------------------------------------------------------
-       SECTION 02: CAREER & EDUCATION (Swipeable/Draggable Timeline)
-       ------------------------------------------------------------- */
-    .section-experience {
-      padding-top: clamp(3.5rem, 7vw, 6rem);
-      padding-bottom: clamp(3.5rem, 7vw, 6rem);
-      background-color: var(--surface-tint);
-      border-top: 1px solid var(--surface-border);
-      border-bottom: 1px solid var(--surface-border);
-    }
-
-    .timeline-header-wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-
-    @media (min-width: 768px) {
-      .timeline-header-wrap {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-      }
-    }
-
-    .timeline-nav-controls {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .timeline-nav-btn {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--surface-border);
-      background-color: var(--surface);
-      color: var(--text);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: all var(--transition-base);
-    }
-
-    .timeline-nav-btn:hover:not(:disabled) {
-      background-color: var(--accent);
-      color: var(--accent-contrast);
-      border-color: var(--accent);
-    }
-
-    .timeline-nav-btn:disabled {
-      opacity: 0.35;
-      cursor: not-allowed;
-    }
-
-    .swipe-hint {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-faint);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-top: 0.5rem;
-    }
-
-    @media (min-width: 960px) {
-      .swipe-hint {
-        display: none;
-      }
-    }
-
-    /* Timeline Horizontal Track */
-    .timeline-track-container {
-      position: relative;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 1.5rem;
-      scrollbar-width: thin;
-      scrollbar-color: var(--surface-border) transparent;
-      cursor: grab;
-      user-select: none;
-    }
-
-    .timeline-track-container:active {
-      cursor: grabbing;
-    }
-
-    .timeline-track {
-      display: flex;
-      gap: 1.75rem;
-      width: max-content;
-      padding: 0.25rem 0.25rem;
-    }
-
-    .timeline-card {
-      width: clamp(280px, 75vw, 380px);
-      scroll-snap-align: start;
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      padding: 2rem 1.75rem;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      flex-shrink: 0;
-      box-shadow: var(--shadow-subtle);
-    }
-
-    .timeline-card-photo {
-      width: clamp(280px, 75vw, 380px);
-      scroll-snap-align: start;
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      box-shadow: var(--shadow-subtle);
-    }
-
-    .timeline-photo-img-wrap {
-      width: 100%;
-      height: 240px;
-      overflow: hidden;
-      background: #111;
-    }
-
-    .timeline-photo-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 25%;
-    }
-
-    .timeline-photo-meta {
-      padding: 1.5rem 1.75rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .timeline-badge {
-      display: inline-flex;
-      align-items: center;
-      align-self: flex-start;
-      font-family: var(--font-mono);
-      font-size: 0.6875rem;
-      padding: 0.25rem 0.6rem;
-      border-radius: var(--radius-sm);
-      background-color: var(--surface-tint);
-      border: 1px solid var(--surface-border);
-      color: var(--accent);
-      margin-bottom: 1.15rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .timeline-date {
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      font-weight: 500;
-      color: var(--text-faint);
-      margin-bottom: 0.5rem;
-    }
-
-    .timeline-role {
-      font-family: var(--font-display);
-      font-size: 1.35rem;
-      font-weight: 500;
-      line-height: 1.22;
-      color: var(--text);
-      margin-bottom: 0.4rem;
-    }
-
-    .timeline-org {
-      font-size: 0.9375rem;
-      font-weight: 600;
-      color: var(--accent);
-      margin-bottom: 1.15rem;
-    }
-
-    .timeline-body {
-      font-size: 0.9375rem;
-      line-height: 1.65;
-      color: var(--text-muted);
-    }
-
-    /* -------------------------------------------------------------
-       SECTION 03: SELECTED WORK (Keyboard Accessible Accordion)
-       ------------------------------------------------------------- */
-    .section-projects {
-      padding-top: clamp(3.5rem, 7vw, 6rem);
-      padding-bottom: clamp(3.5rem, 7vw, 6rem);
-    }
-
-    .accordion-group {
-      display: flex;
-      flex-direction: column;
-      border-top: 1px solid var(--surface-border);
-      margin-top: 3rem;
-    }
-
-    .accordion-item {
-      border-bottom: 1px solid var(--surface-border);
-    }
-
-    .accordion-trigger {
-      width: 100%;
-      text-align: left;
-      padding: 1.75rem 0.5rem;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 1.25rem;
-      align-items: center;
-      transition: background-color var(--transition-base);
-    }
-
-    .accordion-index {
-      font-family: var(--font-mono);
-      font-size: 0.875rem;
-      color: var(--accent);
-      font-weight: 500;
-      width: 28px;
-    }
-
-    .accordion-header-text {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    .accordion-project-title {
-      font-family: var(--font-display);
-      font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-      font-weight: 450;
-      color: var(--text);
-      line-height: 1.2;
-    }
-
-    .accordion-project-type {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-faint);
-    }
-
-    .accordion-icon {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: 1px solid var(--surface-border);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-mono);
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-    }
-
-    .accordion-trigger[aria-expanded="true"] .accordion-icon {
-      transform: rotate(45deg);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    .accordion-panel {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .accordion-panel[data-open="true"] {
-      grid-template-rows: 1fr;
-    }
-
-    .accordion-content {
-      overflow: hidden;
-    }
-
-    .accordion-content-inner {
-      padding: 0.5rem 0.5rem 2.25rem 3rem;
-      max-width: 68ch;
-    }
-
-    .project-description {
-      font-size: 1.0625rem;
-      line-height: 1.75;
-      color: var(--text-muted);
-      margin-bottom: 1.25rem;
-    }
-
-    .tag-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .tag-pill {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: var(--radius-sm);
-      background-color: var(--surface-tint);
-      border: 1px solid var(--surface-border);
-      color: var(--text-muted);
-    }
-
-    /* -------------------------------------------------------------
-       SECTION 04: CAPABILITIES (Matrix Columns, Not Bubble Chips)
-       ------------------------------------------------------------- */
-    .section-skills {
-      padding-top: clamp(3.5rem, 7vw, 6rem);
-      padding-bottom: clamp(3.5rem, 7vw, 6rem);
-      background-color: var(--surface-tint);
-      border-top: 1px solid var(--surface-border);
-      border-bottom: 1px solid var(--surface-border);
-    }
-
-    .matrix-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-top: 3.5rem;
-    }
-
-    @media (min-width: 860px) {
-      .matrix-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .matrix-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      padding: 2.25rem 1.75rem;
-      display: flex;
-      flex-direction: column;
-      box-shadow: var(--shadow-subtle);
-    }
-
-    .matrix-marker {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.85rem;
-    }
-
-    .matrix-title {
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: var(--text);
-      line-height: 1.25;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--surface-border);
-    }
-
-    .matrix-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-
-    .matrix-item {
-      display: flex;
-      align-items: baseline;
-      gap: 0.75rem;
-      font-size: 0.9375rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    .matrix-item::before {
-      content: "—";
-      font-family: var(--font-mono);
-      color: var(--accent);
-      font-size: 0.75rem;
-      flex-shrink: 0;
-    }
-
-    /* -------------------------------------------------------------
-       SECTION 05: TRAVEL (Distinctive Magazine Overlapping Layout)
-       ------------------------------------------------------------- */
-    .section-travel {
-      padding-top: clamp(4rem, 8vw, 7rem);
-      padding-bottom: clamp(4rem, 8vw, 7rem);
-      position: relative;
-    }
-
-    .travel-editorial-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    @media (min-width: 960px) {
-      .travel-editorial-grid {
-        grid-template-columns: 1fr 1.15fr;
-        gap: 4.5rem;
-      }
-    }
-
-    .travel-story p {
-      font-size: 1.125rem;
-      line-height: 1.8;
-      color: var(--text-muted);
-      margin-bottom: 1.5rem;
-    }
-
-    .travel-quote-block {
-      border-left: 2px solid var(--accent);
-      padding-left: 1.25rem;
-      margin-top: 2rem;
-      font-style: italic;
-      color: var(--text);
-    }
-
-    /* Overlapping Magazine Montage */
-    .travel-visual-montage {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    @media (min-width: 640px) {
-      .travel-visual-montage {
-        display: block;
-        min-height: 520px;
-      }
-    }
-
-    .travel-frame {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      padding: 0.75rem 0.75rem 1.1rem;
-      box-shadow: var(--shadow-subtle);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .travel-frame:hover {
-      box-shadow: var(--shadow-hover);
-    }
-
-    .travel-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: calc(var(--radius-md) - 4px);
-    }
-
-    .travel-frame-caption {
-      margin-top: 0.75rem;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-faint);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    /* Primary Frame (Mountain View) */
-    .travel-frame-primary {
-      width: 100%;
-    }
-
-    @media (min-width: 640px) {
-      .travel-frame-primary {
-        width: 68%;
-        position: relative;
-        z-index: 1;
-      }
-
-      .travel-frame-primary img {
-        height: 380px;
-        object-position: center 60%;
-      }
-
-      .travel-frame-primary:hover {
-        transform: translateY(-4px);
-      }
-    }
-
-    /* Secondary Frame (Sunset Beach) - Offset & Overlapping */
-    .travel-frame-secondary {
-      width: 100%;
-    }
-
-    @media (min-width: 640px) {
-      .travel-frame-secondary {
-        width: 58%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 2;
-      }
-
-      .travel-frame-secondary img {
-        height: 320px;
-        object-position: center 35%;
-      }
-
-      .travel-frame-secondary:hover {
-        transform: translate(-3px, -4px);
-      }
-    }
-
-    /* -------------------------------------------------------------
-       SECTION 06: CONTACT & WHATSAPP FORM
-       ------------------------------------------------------------- */
-    .section-contact {
-      padding-top: clamp(3.5rem, 7vw, 6rem);
-      padding-bottom: clamp(4rem, 8vw, 7rem);
-      background-color: var(--surface-tint);
-      border-top: 1px solid var(--surface-border);
-    }
-
-    .contact-layout {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3.5rem;
-      margin-top: 3rem;
-    }
-
-    @media (min-width: 960px) {
-      .contact-layout {
-        grid-template-columns: 1fr 1.2fr;
-        gap: 4.5rem;
-      }
-    }
-
-    .contact-direct-info {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    .direct-info-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      padding: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-
-    .info-row {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    .info-label {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-faint);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .info-val {
-      font-size: 1.0625rem;
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .info-val a:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    /* WhatsApp Inquiry Form */
-    .form-card {
-      background: var(--surface);
-      border: 1px solid var(--surface-border);
-      border-radius: var(--radius-md);
-      padding: clamp(1.75rem, 4vw, 2.75rem);
-      box-shadow: var(--shadow-subtle);
-    }
-
-    .form-header {
-      margin-bottom: 1.75rem;
-    }
-
-    .form-title {
-      font-family: var(--font-display);
-      font-size: 1.6rem;
-      font-weight: 500;
-      margin-bottom: 0.4rem;
-      color: var(--text);
-    }
-
-    .form-helper {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
-      margin-bottom: 1.35rem;
-    }
-
-    .form-label {
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .form-label span.req {
-      color: var(--accent);
-    }
-
-    .form-input, .form-select, .form-textarea {
-      width: 100%;
-      padding: 0.85rem 1rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--surface-border);
-      background-color: var(--bg);
-      color: var(--text);
-      transition: border-color var(--transition-base), box-shadow var(--transition-base);
-    }
-
-    .form-input:focus, .form-select:focus, .form-textarea:focus {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-soft);
-    }
-
-    .form-textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .form-error-alert {
-      display: none;
-      padding: 0.75rem 1rem;
-      background-color: rgba(180, 50, 50, 0.1);
-      border: 1px solid rgba(180, 50, 50, 0.3);
-      border-radius: var(--radius-sm);
-      color: #B43232;
-      font-size: 0.875rem;
-      margin-bottom: 1.25rem;
-    }
-
-    [data-theme="dark"] .form-error-alert {
-      color: #F87171;
-    }
-
-    .form-submit-btn {
-      width: 100%;
-      background-color: var(--accent);
-      color: var(--accent-contrast);
-      padding: 0.95rem 1.75rem;
-      font-size: 1rem;
-      font-weight: 600;
-      border-radius: var(--radius-sm);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      min-height: 48px;
-      transition: background-color var(--transition-base), transform var(--transition-base);
-    }
-
-    .form-submit-btn:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(-1px);
-    }
-
-    /* -------------------------------------------------------------
-       FOOTER (Clean, Back-to-Top, Social Icons)
-       ------------------------------------------------------------- */
-    .site-footer {
-      background-color: var(--bg);
-      border-top: 1px solid var(--surface-border);
-      padding-top: 3.5rem;
-      padding-bottom: 3.5rem;
-      margin-top: auto;
-    }
-
-    .footer-top {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      align-items: flex-start;
-      margin-bottom: 2.5rem;
+    /* Custom refined scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
     }
-
-    @media (min-width: 768px) {
-      .footer-top {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
+    ::-webkit-scrollbar-track {
+      background: #0B111A;
     }
-
-    .back-to-top-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-family: var(--font-mono);
-      font-size: 0.8125rem;
-      color: var(--text-muted);
-      border: 1px solid var(--surface-border);
-      padding: 0.5rem 0.9rem;
-      border-radius: var(--radius-sm);
-      transition: all var(--transition-base);
-      min-height: 44px;
+    ::-webkit-scrollbar-thumb {
+      background: #2A3C5C;
+      border-radius: 4px;
     }
-
-    .back-to-top-link:hover {
-      border-color: var(--accent);
-      color: var(--accent);
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C2A775;
     }
 
-    .footer-bottom {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--surface-border);
+    /* Ambient noise & subtle grain overlay */
+    .bg-grain {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 24px 24px;
     }
 
-    @media (min-width: 768px) {
-      .footer-bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
+    /* Glass card styles */
+    .glass-card {
+      background: rgba(15, 23, 38, 0.65);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
     }
-
-    .copyright-text {
-      font-size: 0.875rem;
-      color: var(--text-muted);
+    .glass-card:hover {
+      border-color: rgba(194, 167, 117, 0.35);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px 0 rgba(194, 167, 117, 0.08);
     }
 
-    /* -------------------------------------------------------------
-       MOTION & SCROLL OBSERVER REVEALS
-       Respects prefers-reduced-motion
-       ------------------------------------------------------------- */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    .badge-pill {
+      background: rgba(194, 167, 117, 0.1);
+      border: 1px solid rgba(194, 167, 117, 0.25);
+      color: #E8DEC9;
     }
 
-    .fade-up.is-visible {
-      opacity: 1;
-      transform: translateY(0);
+    /* Subtle pulse animation */
+    @keyframes softPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.85; }
     }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-      .fade-up {
-        opacity: 1 !important;
-        transform: none !important;
-      }
+    .animate-soft-pulse {
+      animation: softPulse 4s ease-in-out infinite;
     }
   </style>
 </head>
-<body>
 
-  <!-- =========================================================
-       STICKY HEADER & NAVIGATION
-       ========================================================= -->
-  <header class="site-header" id="site-header">
-    <div class="container header-inner">
-      <!-- Monogram & Full Name -->
-      <a href="#hero" class="brand-mark" aria-label="MD. Rakin Ashab - Back to Hero">
-        <span class="monogram-badge" aria-hidden="true">MRA</span>
-        <span class="brand-name">
-          <span class="brand-name-full">MD. Rakin Ashab</span>
-          <span class="brand-name-sub">Dhaka, Bangladesh</span>
-        </span>
-      </a>
+<body class="bg-slatebg-950 text-slate-200 font-sans antialiased selection:bg-brand-500 selection:text-white bg-grain relative min-h-screen">
 
-      <!-- Desktop Nav -->
-      <nav class="nav-desktop" aria-label="Main Navigation">
-        <a href="#hero" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Journey</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#travel" class="nav-link">Travel</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
+  <!-- Ambient Light Accents -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] bg-radial-glow pointer-events-none -z-10"></div>
+  <div class="fixed top-1/3 -right-40 w-[600px] h-[600px] bg-radial-accent pointer-events-none -z-10"></div>
 
-      <!-- Action Items -->
-      <div class="header-actions">
-        <!-- Light / Dark Toggle -->
-        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
-          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg class="moon-icon" style="display:none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-
-        <a href="#contact" class="btn-header-cta">
-          <span>Let's Talk</span>
-          <span aria-hidden="true">↗</span>
+  <!-- ================= TOP HEADER / NAVIGATION ================= -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="glass-card rounded-2xl px-5 py-3 flex items-center justify-between shadow-2xl border border-white/10">
+        
+        <!-- Logo / Name Brand -->
+        <a href="#hero" class="group flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 via-brand-500 to-brand-700 flex items-center justify-center text-slatebg-950 font-bold text-lg shadow-md group-hover:scale-105 transition-transform duration-200">
+            RA
+          </div>
+          <div>
+            <span class="block font-bold text-white tracking-tight text-base sm:text-lg group-hover:text-brand-300 transition-colors">MD. Rakin Ashab</span>
+            <span class="block text-[11px] font-medium text-slate-400 tracking-wider uppercase">Entrepreneur & Hospitality</span>
+          </div>
         </a>
 
-        <!-- Mobile Menu Hamburger -->
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#about" class="hover:text-brand-300 transition-colors">About</a>
+          <a href="#ventures" class="hover:text-brand-300 transition-colors">Ventures</a>
+          <a href="#experience" class="hover:text-brand-300 transition-colors">Experience</a>
+          <a href="#education" class="hover:text-brand-300 transition-colors">Education</a>
+          <a href="#travel" class="hover:text-brand-300 transition-colors flex items-center gap-1.5">
+            <span>Travel</span>
+            <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+          </a>
+          <a href="#skills" class="hover:text-brand-300 transition-colors">Strengths & Tools</a>
+        </nav>
 
-    <!-- Mobile Drawer Menu -->
-    <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" hidden>
-      <a href="#hero" class="mobile-nav-link"><span>Home</span> <span class="num">00</span></a>
-      <a href="#about" class="mobile-nav-link"><span>About</span> <span class="num">01</span></a>
-      <a href="#experience" class="mobile-nav-link"><span>Journey</span> <span class="num">02</span></a>
-      <a href="#projects" class="mobile-nav-link"><span>Projects</span> <span class="num">03</span></a>
-      <a href="#skills" class="mobile-nav-link"><span>Skills</span> <span class="num">04</span></a>
-      <a href="#travel" class="mobile-nav-link"><span>Travel</span> <span class="num">05</span></a>
-      <a href="#contact" class="mobile-nav-link"><span>Contact</span> <span class="num">06</span></a>
+        <!-- Right Quick Action / WhatsApp & Contact Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/8801936106621?text=Hello%20MD.%20Rakin%20Ashab,%20I%20visited%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 transition-all flex items-center gap-1.5" title="Chat on WhatsApp">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.531 1.77.817 2.796.817 3.181 0 5.768-2.587 5.768-5.768.001-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.529-.489-4.996-1.341l-5.004 1.311 1.332-4.869c-1.021-1.536-1.613-3.37-1.613-5.344 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+          <a href="#contact" class="px-4 py-2 rounded-xl text-xs font-semibold bg-brand-400 hover:bg-brand-300 text-slatebg-950 transition-all duration-200 shadow-md hover:shadow-brand-400/20 hover:-translate-y-0.5">
+            Get in Touch
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 focus:outline-none" aria-label="Toggle menu">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden mt-2 glass-card rounded-2xl p-5 border border-white/10 shadow-2xl transition-all duration-300">
+        <nav class="flex flex-col gap-3.5 text-sm font-medium">
+          <a href="#about" class="mobile-nav-link text-slate-300 hover:text-brand-300 py-1">About</a>
+          <a href="#ventures" class="mobile-nav-link text-slate-300 hover:text-brand-300 py-1">Ventures & Initiatives</a>
+          <a href="#experience" class="mobile-nav-link text-slate-300 hover:text-brand-300 py-1">Career Journey</a>
+          <a href="#education" class="mobile-nav-link text-slate-300 hover:text-brand-300 py-1">Education</a>
+          <a href="#travel" class="mobile-nav-link text-slate-300 hover:text-brand-300 py-1">Travel & Worldview</a>
+          <a href="#skills" class="mobile-nav-link text-slate-300 hover:text-brand-300 py-1">Strengths & Tools</a>
+          <div class="pt-3 border-t border-white/10 flex flex-col gap-2.5">
+            <a href="https://wa.me/8801936106621?text=Hello%20MD.%20Rakin%20Ashab" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl text-center text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.531 1.77.817 2.796.817 3.181 0 5.768-2.587 5.768-5.768.001-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.529-.489-4.996-1.341l-5.004 1.311 1.332-4.869c-1.021-1.536-1.613-3.37-1.613-5.344 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+              Chat on WhatsApp
+            </a>
+            <a href="#contact" class="mobile-nav-link w-full py-2.5 rounded-xl text-center text-xs font-semibold bg-brand-400 text-slatebg-950">
+              Contact MD. Rakin Ashab
+            </a>
+          </div>
+        </nav>
+      </div>
+
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- =========================================================
-         HERO SECTION
-         ========================================================= -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-main-column">
-          <!-- Status Pill -->
-          <div class="status-pill">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span>Available for Collaborations &amp; Projects</span>
-          </div>
-
-          <h1 class="hero-headline">
-            Hi, I'm <span class="editorial-underline">MD. Rakin Ashab</span>
-          </h1>
-
-          <!-- Rotating Subtitle -->
-          <div class="rotating-subtitle-wrapper" aria-live="polite">
-            <span class="rotating-text" id="rotating-subtitle">Digital Entrepreneur</span>
-          </div>
-
-          <!-- Hero Intro Copy -->
-          <p class="hero-intro">
-            Digital Entrepreneur, Curious Tech Explorer &amp; Hospitality Professional bringing creative solutions, client care, and hands-on curiosity with technology. Based in Dhaka, Bangladesh, I love tinkering with and exploring new technology while leading ONE STOP SOLUTION. Alongside experimenting with digital tools and workflows, I bring practical client-service experience from Visa Processing, Travel Consulting, and Hotel Management.
-          </p>
-
-          <!-- Action CTAs -->
-          <div class="hero-ctas">
-            <a href="#projects" class="btn btn-primary">
-              Explore My Work
-            </a>
-            <a href="#contact" class="btn btn-outline">
-              Get In Touch →
-            </a>
-          </div>
-
-          <!-- Social Links with clean line SVG icons -->
-          <div class="hero-socials" aria-label="Social Profiles">
-            <!-- GitHub -->
-            <a href="https://github.com/rakinashab-oss" class="social-link" target="_blank" rel="noopener" aria-label="GitHub profile of MD. Rakin Ashab">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/mohammad-rakin-ashab-54082421a" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn profile of MD. Rakin Ashab">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/rakin_ashab" class="social-link" target="_blank" rel="noopener" aria-label="Instagram profile of MD. Rakin Ashab">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-            <!-- WhatsApp -->
-            <a href="https://wa.me/8801936106621" class="social-link" target="_blank" rel="noopener" aria-label="Direct WhatsApp chat with MD. Rakin Ashab">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-              </svg>
-            </a>
-            <!-- Email -->
-            <a href="mailto:contact@rakin.online" class="social-link" aria-label="Send email to contact@rakin.online">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Hero Aside Editorial Card -->
-        <aside class="hero-aside-card fade-up">
-          <div class="aside-eyebrow section-eyebrow">Guiding Philosophy</div>
-          <h2 class="aside-headline">“Clarity in communication, curiosity in craft.”</h2>
-          <p class="aside-quote">
-            Whether architecting digital brand systems or managing complex international visa documentation, every challenge is met with human empathy, thorough organization, and hands-on technological curiosity.
-          </p>
-          <ul class="quick-meta-list">
-            <li class="quick-meta-item">
-              <span class="quick-meta-label">Primary Venture</span>
-              <span class="quick-meta-val">ONE STOP SOLUTION</span>
-            </li>
-            <li class="quick-meta-item">
-              <span class="quick-meta-label">Headquarters</span>
-              <span class="quick-meta-val">Dhaka, Bangladesh</span>
-            </li>
-            <li class="quick-meta-item">
-              <span class="quick-meta-label">Key Competencies</span>
-              <span class="quick-meta-val">Web, Branding, Hospitality</span>
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- =========================================================
-         01 · ABOUT SECTION
-         ========================================================= -->
-    <section class="section-about" id="about">
-      <div class="container">
-        <div class="section-eyebrow">01 / Profile Overview</div>
-        
-        <div class="about-lead-grid fade-up">
-          <h2 class="section-heading">
-            Combining Technical Precision with Five-Star Client Service.
-          </h2>
-          <div class="about-lead-body">
-            <p>
-              I'm someone who genuinely enjoys exploring how things work—whether that means tinkering with new digital tools, testing out productivity concepts, or helping clients find clear, practical solutions. My background blends hands-on tech curiosity, digital agency leadership, and hospitality &amp; travel consulting.
-            </p>
-            <p>
-              Through ONE STOP SOLUTION, I help businesses build a strong digital presence, visual identity, and practical workflows. At the same time, my experience in visa processing, student counseling, and Hotel Management training keeps every client interaction grounded in empathy, patience, and clear communication.
-            </p>
-          </div>
-        </div>
-
-        <!-- Three Pillars (with Photos: formal-1 & formal-2) -->
-        <div class="pillars-grid">
-          <!-- Pillar 1: formal-1 -->
-          <article class="pillar-card fade-up">
-            <div class="pillar-media pillar-media-formal-1">
-              <img src="images/formal-1.jpg" alt="MD. Rakin Ashab in formal attire, founder of ONE STOP SOLUTION" loading="lazy" width="600" height="450">
-              <div class="pillar-caption">Digital Agency &amp; Systems</div>
-            </div>
-            <div class="pillar-content">
-              <span class="pillar-num">01</span>
-              <h3 class="pillar-title">Curious Tech Exploration</h3>
-              <p class="pillar-desc">
-                Tinkering with Tools, Workflows &amp; Ideas. Constantly experimenting with modern digital workflows, automations, and productivity interfaces.
-              </p>
-            </div>
-          </article>
-
-          <!-- Pillar 2: Agency Leadership -->
-          <article class="pillar-card fade-up">
-            <div class="pillar-media" style="display:flex; align-items:center; justify-content:center; background:var(--surface-tint);">
-              <div style="padding:2rem; text-align:center;">
-                <span class="monogram-badge" style="width:48px; height:48px; font-size:1.1rem; margin-bottom:1rem;">OSS</span>
-                <p style="font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted);">Independent Digital Agency</p>
-              </div>
-              <div class="pillar-caption">Founder &amp; Principal</div>
-            </div>
-            <div class="pillar-content">
-              <span class="pillar-num">02</span>
-              <h3 class="pillar-title">Digital Agency Leadership</h3>
-              <p class="pillar-desc">
-                Founder @ ONE STOP SOLUTION. Directing brand identity projects, web development, and turnkey marketing packages for businesses scaling their presence.
-              </p>
-            </div>
-          </article>
-
-          <!-- Pillar 3: formal-2 -->
-          <article class="pillar-card fade-up">
-            <div class="pillar-media pillar-media-formal-2">
-              <img src="images/formal-2.jpg" alt="MD. Rakin Ashab seated in luxury lounge, hospitality and travel consulting executive" loading="lazy" width="600" height="450">
-              <div class="pillar-caption">Global Advisory</div>
-            </div>
-            <div class="pillar-content">
-              <span class="pillar-num">03</span>
-              <h3 class="pillar-title">Hospitality &amp; Global Consulting</h3>
-              <p class="pillar-desc">
-                Visa Processing &amp; Guest Relations. Providing meticulous documentation compliance, student counseling, and luxury guest service standards.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- Animated Stats Strip -->
-        <div class="stats-strip fade-up" id="stats-counter-strip">
-          <div class="stat-item">
-            <div class="stat-value" data-target="3" data-suffix="+">0+</div>
-            <div class="stat-label">Core Domains Mastered</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-value" style="font-size:clamp(1.75rem,2.8vw,2.5rem);">Founder</div>
-            <div class="stat-label">@ ONE STOP SOLUTION</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-value" style="font-size:clamp(1.75rem,2.8vw,2.5rem);">Dhaka, BD</div>
-            <div class="stat-label">Global Collaborations</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
-         02 · CAREER & EDUCATION: "Ventures, Experience & Training"
-         ========================================================= -->
-    <section class="section-experience" id="experience">
-      <div class="container">
-        <div class="timeline-header-wrap">
-          <div>
-            <div class="section-eyebrow">02 / Journey</div>
-            <h2 class="section-heading" style="margin-bottom:0.5rem;">Ventures, Experience &amp; Training</h2>
-            <p class="section-lead">
-              A timeline of entrepreneurial leadership, international client advisory, and hospitality management education.
-            </p>
-            <div class="swipe-hint" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-              <span>Swipe timeline to explore</span>
-            </div>
-          </div>
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="pt-32 sm:pt-40 pb-20 sm:pb-28 px-4 sm:px-8 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          <!-- Desktop navigation arrows for timeline -->
-          <div class="timeline-nav-controls" aria-label="Timeline navigation">
-            <button class="timeline-nav-btn" id="timeline-prev-btn" aria-label="Previous timeline item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
-            <button class="timeline-nav-btn" id="timeline-next-btn" aria-label="Next timeline item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Horizontal Swipeable/Draggable Track -->
-        <div class="timeline-track-container" id="timeline-track-container" tabindex="0" role="region" aria-label="Career and education timeline">
-          <div class="timeline-track">
+          <!-- Hero Text Column -->
+          <div class="lg:col-span-7 flex flex-col items-start">
             
-            <!-- Item 1: ONE STOP SOLUTION -->
-            <article class="timeline-card">
-              <span class="timeline-badge">Active Venture</span>
-              <div class="timeline-date">Ongoing Leadership</div>
-              <h3 class="timeline-role">Founder &amp; Lead</h3>
-              <div class="timeline-org">ONE STOP SOLUTION</div>
-              <p class="timeline-body">
-                Leading an independent digital agency providing end-to-end web development, graphic design, brand identity systems, and custom digital solutions tailored to help businesses modernize and scale.
-              </p>
-            </article>
-
-            <!-- Item 2: Creative Tours & Travels -->
-            <article class="timeline-card">
-              <span class="timeline-badge">Hospitality &amp; Travel</span>
-              <div class="timeline-date">April 2026 – Ended Nov 2026</div>
-              <h3 class="timeline-role">Customer Relations Officer &amp; Visa Processing Executive</h3>
-              <div class="timeline-org">Creative Tours &amp; Travels</div>
-              <p class="timeline-body">
-                Handled international travel consultations, end-to-end visa documentation compliance, embassy submission workflows, and client support through November 2026.
-              </p>
-            </article>
-
-            <!-- Item 3: Samish Global Education -->
-            <article class="timeline-card">
-              <span class="timeline-badge">Global Education Advisory</span>
-              <div class="timeline-date">2025 – April 2026</div>
-              <h3 class="timeline-role">Junior Counselor</h3>
-              <div class="timeline-org">Samish Global Education</div>
-              <p class="timeline-body">
-                Guided prospective students through global higher-education pathways, university selection, application preparation, and one-on-one academic career counseling.
-              </p>
-            </article>
-
-            <!-- Item 4: Diploma in Hotel Management with Photo hospitality-1 -->
-            <article class="timeline-card-photo">
-              <div class="timeline-photo-img-wrap">
-                <img src="images/hospitality-1.jpg" alt="MD. Rakin Ashab in professional culinary uniform at Update Hotel Management Institute" loading="lazy" width="380" height="240">
-              </div>
-              <div class="timeline-photo-meta">
-                <span class="timeline-badge">Academic Specialization</span>
-                <div class="timeline-date">2025 – Present</div>
-                <h3 class="timeline-role">Diploma in Hotel Management</h3>
-                <div class="timeline-org">Update Hotel Management Institute</div>
-                <p class="timeline-body">
-                  Specializing in international hospitality operations, Food &amp; Beverage (F&amp;B) service standards, front-office excellence, and luxury guest experience management.
-                </p>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
-         03 · SELECTED WORK: "Featured Projects & Initiatives"
-         ========================================================= -->
-    <section class="section-projects" id="projects">
-      <div class="container">
-        <div class="section-eyebrow">03 / Portfolio</div>
-        <h2 class="section-heading">Featured Projects &amp; Initiatives</h2>
-        <p class="section-lead">Tap a project to open its details.</p>
-
-        <!-- Keyboard-Accessible Smooth Accordion -->
-        <div class="accordion-group" id="projects-accordion">
-          
-          <!-- Project 1 -->
-          <div class="accordion-item">
-            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="proj-desc-1" id="proj-trigger-1">
-              <span class="accordion-index" aria-hidden="true">01</span>
-              <div class="accordion-header-text">
-                <span class="accordion-project-title">Rakin's Personal Dashboard</span>
-                <span class="accordion-project-type">Personal Tech Experiment</span>
-              </div>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div id="proj-desc-1" class="accordion-panel" role="region" aria-labelledby="proj-trigger-1" data-open="false">
-              <div class="accordion-content">
-                <div class="accordion-content-inner">
-                  <p class="project-description">
-                    A personal workspace experiment exploring how email threads and social messages can be brought together into a single, distraction-free view for everyday productivity tinkering.
-                  </p>
-                  <div class="tag-cloud">
-                    <span class="tag-pill">Tech Exploration</span>
-                    <span class="tag-pill">Inbox Concept</span>
-                    <span class="tag-pill">Workflow Tinkering</span>
-                  </div>
-                </div>
-              </div>
+            <!-- Executive Status Pill -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full badge-pill text-xs font-medium mb-6">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="tracking-wide text-brand-200">Based in Dhaka &bull; Originally from Jashore</span>
             </div>
-          </div>
 
-          <!-- Project 2 -->
-          <div class="accordion-item">
-            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="proj-desc-2" id="proj-trigger-2">
-              <span class="accordion-index" aria-hidden="true">02</span>
-              <div class="accordion-header-text">
-                <span class="accordion-project-title">BusyBeee</span>
-                <span class="accordion-project-type">Product Concept &amp; UI Exploration</span>
-              </div>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div id="proj-desc-2" class="accordion-panel" role="region" aria-labelledby="proj-trigger-2" data-open="false">
-              <div class="accordion-content">
-                <div class="accordion-content-inner">
-                  <p class="project-description">
-                    An exploratory service-matching concept focused on trust, simple media verification steps, and clean user flows—created out of curiosity about how modern service platforms work.
-                  </p>
-                  <div class="tag-cloud">
-                    <span class="tag-pill">Concept Idea</span>
-                    <span class="tag-pill">User Flow</span>
-                    <span class="tag-pill">Trust &amp; Verification</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!-- Headline -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.12] mb-6">
+              Entrepreneur, hospitality student, &amp; 
+              <span class="font-serif italic font-normal text-brand-300 block mt-1">curious digital explorer.</span>
+            </h1>
 
-          <!-- Project 3 -->
-          <div class="accordion-item">
-            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="proj-desc-3" id="proj-trigger-3">
-              <span class="accordion-index" aria-hidden="true">03</span>
-              <div class="accordion-header-text">
-                <span class="accordion-project-title">ONE STOP SOLUTION Web &amp; Brand Suite</span>
-                <span class="accordion-project-type">Digital Agency Suite</span>
-              </div>
-              <span class="accordion-icon" aria-hidden="true">+</span>
-            </button>
-            <div id="proj-desc-3" class="accordion-panel" role="region" aria-labelledby="proj-trigger-3" data-open="false">
-              <div class="accordion-content">
-                <div class="accordion-content-inner">
-                  <p class="project-description">
-                    Comprehensive digital presence packages, responsive websites, visual brand guidelines, and marketing collateral engineered for small-to-medium enterprises through my agency.
-                  </p>
-                  <div class="tag-cloud">
-                    <span class="tag-pill">Brand Identity</span>
-                    <span class="tag-pill">Web Development</span>
-                    <span class="tag-pill">Canva &amp; Graphics</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
-         04 · CAPABILITIES: "Skills & Expertise Matrix"
-         ========================================================= -->
-    <section class="section-skills" id="skills">
-      <div class="container">
-        <div class="section-eyebrow">04 / Capabilities</div>
-        <h2 class="section-heading">Skills &amp; Expertise Matrix</h2>
-        <p class="section-lead">
-          A balanced toolkit spanning digital agency management, international hospitality &amp; client relations, and modern creative productivity suites.
-        </p>
-
-        <!-- Three Refined List Matrix Blocks (Not bubble chips) -->
-        <div class="matrix-grid">
-          <!-- Column 1 -->
-          <div class="matrix-card fade-up">
-            <span class="matrix-marker">Discipline 01</span>
-            <h3 class="matrix-title">Digital Agency &amp; Marketing</h3>
-            <ul class="matrix-list">
-              <li class="matrix-item">Digital Agency Management</li>
-              <li class="matrix-item">Brand Identity &amp; Strategy</li>
-              <li class="matrix-item">Social Media Marketing</li>
-              <li class="matrix-item">Strategic SWOT Analysis</li>
-              <li class="matrix-item">Client Acquisition &amp; Project Coordination</li>
-            </ul>
-          </div>
-
-          <!-- Column 2 -->
-          <div class="matrix-card fade-up">
-            <span class="matrix-marker">Discipline 02</span>
-            <h3 class="matrix-title">Hospitality &amp; Client Relations</h3>
-            <ul class="matrix-list">
-              <li class="matrix-item">Customer Relations Management</li>
-              <li class="matrix-item">Visa Processing &amp; Travel Consulting</li>
-              <li class="matrix-item">Student &amp; Career Counseling</li>
-              <li class="matrix-item">Hotel &amp; F&amp;B Service Operations</li>
-              <li class="matrix-item">Front-Office Guest Experience</li>
-            </ul>
-          </div>
-
-          <!-- Column 3 -->
-          <div class="matrix-card fade-up">
-            <span class="matrix-marker">Discipline 03</span>
-            <h3 class="matrix-title">Creative &amp; Office Suite</h3>
-            <ul class="matrix-list">
-              <li class="matrix-item">Canva Visual Design</li>
-              <li class="matrix-item">Microsoft Word</li>
-              <li class="matrix-item">Microsoft Excel</li>
-              <li class="matrix-item">PowerPoint Presentations</li>
-              <li class="matrix-item">Microsoft Access</li>
-              <li class="matrix-item">Google Workspace</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
-         05 · TRAVEL SECTION: "Beyond the Desk: Travel"
-         ========================================================= -->
-    <section class="section-travel" id="travel">
-      <div class="container">
-        <div class="travel-editorial-grid">
-          
-          <!-- Narrative Column -->
-          <div class="travel-story fade-up">
-            <div class="section-eyebrow">05 / Personal Pursuit</div>
-            <h2 class="section-heading">Beyond the Desk: Travel.</h2>
-            <p>
-              Stepping away from screens to explore open roads and unfamiliar landscapes keeps my perspective fresh, grounded, and observant. Experiencing different paces of life reminds me that genuine hospitality and meaningful technology both begin with the same principle: listening closely to the people in front of you.
+            <!-- Editorial Positioning Bio -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mb-8 font-light">
+              I am <strong class="text-white font-semibold">MD. Rakin Ashab</strong>. I bring together the client-first empathy of hospitality, the visionary drive of an independent agency founder, and a continuous fascination with emerging AI tools, intuitive web interfaces, and modern digital workflows.
             </p>
-            <p>
-              Every journey reinforces patience and adaptable problem-solving—qualities that directly shape how I advise consulting clients and lead creative projects at home.
-            </p>
-            <div class="travel-quote-block">
-              “Travel expands curiosity into quiet empathy—a reminder that every new horizon brings a cleaner perspective to your daily craft.”
+
+            <!-- Key Quick Pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-2xl mb-9">
+              <div class="p-3.5 rounded-xl glass-card border border-white/5">
+                <span class="text-xs uppercase font-semibold tracking-wider text-brand-400 block mb-1">Founder</span>
+                <span class="text-sm font-semibold text-slate-100 block">One Stop Solutions</span>
+                <span class="text-xs text-slate-400">Digital Agency</span>
+              </div>
+              <div class="p-3.5 rounded-xl glass-card border border-white/5">
+                <span class="text-xs uppercase font-semibold tracking-wider text-brand-400 block mb-1">Academic</span>
+                <span class="text-sm font-semibold text-slate-100 block">Hotel Management</span>
+                <span class="text-xs text-slate-400">Update Institute (Batch 40)</span>
+              </div>
+              <div class="p-3.5 rounded-xl glass-card border border-white/5">
+                <span class="text-xs uppercase font-semibold tracking-wider text-brand-400 block mb-1">Social Impact</span>
+                <span class="text-sm font-semibold text-slate-100 block">Blood Lagbe</span>
+                <span class="text-xs text-slate-400">Voluntary Donor Network</span>
+              </div>
             </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#ventures" class="px-6 py-3.5 rounded-xl text-sm font-semibold bg-brand-400 hover:bg-brand-300 text-slatebg-950 transition-all duration-200 shadow-lg shadow-brand-400/20 hover:-translate-y-0.5 flex items-center gap-2">
+                <span>Explore My Ventures</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a href="#contact" class="px-6 py-3.5 rounded-xl text-sm font-medium glass-card hover:bg-slate-800/80 text-white border border-white/10 hover:border-white/20 transition-all flex items-center gap-2">
+                <span>Direct Contact</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-white/10 text-brand-200 font-mono">+880</span>
+              </a>
+            </div>
+
           </div>
 
-          <!-- Editorial Overlapping Photo Montage (travel-1 & travel-2) -->
-          <div class="travel-visual-montage fade-up">
-            <!-- Primary Frame: Mountain Ridgeline -->
-            <figure class="travel-frame travel-frame-primary">
-              <img src="images/travel-1.jpg" alt="MD. Rakin Ashab standing on a mountain ridge overlooking expansive green valleys" loading="lazy" width="600" height="750">
-              <figcaption class="travel-frame-caption">
-                <!-- Add location here (e.g. Sajek Valley / Bandarban) -->
-                <span>Mountain Horizon</span>
-                <span>Field Studies</span>
-              </figcaption>
-            </figure>
+          <!-- Hero Image & Visual Column -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Subtle decorative frame backdrop -->
+              <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-brand-500/20 via-sky-500/10 to-transparent blur-xl opacity-70"></div>
+              
+              <!-- Main Photo Frame -->
+              <div class="relative rounded-3xl overflow-hidden glass-card p-2.5 border border-white/15 shadow-2xl">
+                <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slatebg-900 group">
+                  <img 
+                    src="images/formal-1.jpg" 
+                    alt="MD. Rakin Ashab - Executive Portrait" 
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                    onerror="this.onerror=null; this.src='assets/media_1795616037456_0ee7844d.jpg';"
+                  />
+                  <!-- Gradient bottom scrim for readability -->
+                  <div class="absolute inset-0 bg-gradient-to-t from-slatebg-950/80 via-transparent to-transparent"></div>
+                  
+                  <!-- Bottom caption in photo -->
+                  <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl backdrop-blur-md bg-slatebg-900/80 border border-white/10 flex items-center justify-between">
+                    <div>
+                      <p class="text-xs uppercase tracking-wider font-semibold text-brand-400">MD. Rakin Ashab</p>
+                      <p class="text-sm font-medium text-white">Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-[11px] text-slate-300">
+                      <svg class="w-3.5 h-3.5 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                      <span>From Jashore</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <!-- Secondary Offset Frame: Coastal Sunset -->
-            <figure class="travel-frame travel-frame-secondary">
-              <img src="images/travel-2.jpg" alt="MD. Rakin Ashab looking out toward the evening ocean tide and setting sun" loading="lazy" width="600" height="750">
-              <figcaption class="travel-frame-caption">
-                <!-- Add location here (e.g. Cox's Bazar / Sea Beach) -->
-                <span>Sunset Shores</span>
-                <span>Reflective Horizons</span>
-              </figcaption>
-            </figure>
+              <!-- Floating badge: Hospitality & Service Excellence -->
+              <div class="absolute -bottom-6 -left-6 hidden sm:flex items-center gap-3 p-3.5 rounded-2xl glass-card border border-white/15 shadow-xl animate-soft-pulse">
+                <div class="w-10 h-10 rounded-xl bg-brand-400/20 border border-brand-400/30 flex items-center justify-center text-brand-300">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <span class="block text-xs font-semibold text-white">Guest &amp; Client First</span>
+                  <span class="block text-[11px] text-slate-400">Hospitality Mentality</span>
+                </div>
+              </div>
+
+              <!-- Floating badge: Wanderlust / Travel -->
+              <div class="absolute -top-5 -right-5 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-2xl glass-card border border-white/15 shadow-xl">
+                <span class="text-sm">✈️</span>
+                <span class="text-xs font-medium text-slate-200">Avid Traveler</span>
+              </div>
+
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- =========================================================
-         06 · GET IN TOUCH: "Let's Build Something Meaningful"
-         ========================================================= -->
-    <section class="section-contact" id="contact">
-      <div class="container">
-        <div class="section-eyebrow">06 / Connect</div>
-        <h2 class="section-heading">Let's Build Something Meaningful Together.</h2>
-        <p class="section-lead">
-          Whether you need digital branding and web solutions through ONE STOP SOLUTION, or want to connect regarding travel, hospitality, and collaborations—reach out directly on WhatsApp or email.
-        </p>
 
-        <div class="contact-layout">
-          <!-- Direct Contact Column -->
-          <div class="contact-direct-info fade-up">
-            <div class="direct-info-card">
-              <div class="info-row">
-                <span class="info-label">Location</span>
-                <span class="info-val">Dhaka, Bangladesh</span>
+    <!-- ================= METRICS & SNAPSHOT STRIP ================= -->
+    <section class="py-10 border-y border-white/5 bg-slatebg-900/40 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+          
+          <div class="flex flex-col border-l-2 border-brand-400/40 pl-4">
+            <span class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Founder</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1">One Stop Solutions (Agency)</span>
+          </div>
+
+          <div class="flex flex-col border-l-2 border-sky-400/40 pl-4">
+            <span class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Hotel Mgmt.</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1">Batch 40 &bull; Update Institute</span>
+          </div>
+
+          <div class="flex flex-col border-l-2 border-rose-400/40 pl-4">
+            <span class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Community</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1">Blood Lagbe Initiative</span>
+          </div>
+
+          <div class="flex flex-col border-l-2 border-emerald-400/40 pl-4">
+            <span class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Relations</span>
+            <span class="text-xs sm:text-sm text-slate-400 mt-1">Travel &amp; Global Counseling</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= ABOUT & EDITORIAL BIO ================= -->
+    <section id="about" class="py-24 sm:py-32 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-medium mb-4">
+            <span>Executive Profile &amp; Narrative</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Where human hospitality meets <span class="font-serif italic font-normal text-brand-300">modern entrepreneurial vision.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Narrative Left Column -->
+          <div class="lg:col-span-7 space-y-6 text-slate-300 leading-relaxed font-light text-base sm:text-lg">
+            <p>
+              My journey is rooted in people, experiences, and forward momentum. Originally from <strong class="text-white font-medium">Jashore</strong> and now actively shaping my professional life in the vibrant capital of <strong class="text-white font-medium">Dhaka</strong>, I have cultivated a distinct philosophy: real success comes from understanding human needs and crafting seamless experiences.
+            </p>
+
+            <p>
+              As a dedicated student of <strong class="text-brand-300 font-medium">Hotel Management at Update Hotel Management Institute</strong>, I have immersed myself in hospitality leadership, guest relations, and the meticulous standards required in luxury environments. This education instills discipline, operational foresight, and high-touch communication.
+            </p>
+
+            <p>
+              Complementing my hospitality foundation is my entrepreneurial drive. I founded <strong class="text-white font-medium">One Stop Solutions</strong>—my independent digital agency delivering cohesive digital marketing, web presence, graphic design, and video editing for businesses seeking brand elevation. Simultaneously, I channel my social responsibility into <strong class="text-rose-300 font-medium">Blood Lagbe</strong>, a voluntary donor directory web initiative that bridges the critical gap between blood donors and patients facing urgent medical crises.
+            </p>
+
+            <div class="p-6 rounded-2xl glass-card border-l-4 border-brand-400 mt-8">
+              <h3 class="font-serif italic text-xl text-brand-200 mb-2">"Curious about systems, devoted to hospitality, inspired by travel."</h3>
+              <p class="text-sm text-slate-300">
+                Rather than claiming formal software programming, my interest lies in being a power explorer of digital ecosystems: harnessing AI productivity tools, studying intuitive web interfaces, streamlining workflows, and orchestrating creative talent to achieve tangible business outcomes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Visual Right Column: Lounge Portrait & Quick Facts -->
+          <div class="lg:col-span-5 flex flex-col gap-6">
+            
+            <!-- Secondary Executive Lounge Visual -->
+            <div class="rounded-2xl overflow-hidden glass-card p-2 border border-white/10 shadow-xl group">
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-slatebg-900">
+                <img 
+                  src="images/formal-2.jpg" 
+                  alt="MD. Rakin Ashab in executive setting" 
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.onerror=null; this.src='assets/media_1795616037446_687812f8.jpg';"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slatebg-950/70 via-transparent to-transparent"></div>
+                <div class="absolute bottom-3 left-3 text-xs text-slate-300 font-medium px-3 py-1 rounded-lg backdrop-blur-md bg-black/40 border border-white/10">
+                  Refined Hospitality &amp; Client Relations
+                </div>
               </div>
-              <div class="info-row">
-                <span class="info-label">Digital Agency</span>
-                <span class="info-val">ONE STOP SOLUTION</span>
+            </div>
+
+            <!-- Quick Identity Dossier Card -->
+            <div class="p-6 rounded-2xl glass-card border border-white/10">
+              <h4 class="text-xs uppercase tracking-wider font-bold text-brand-400 mb-4">Core Identity Dossier</h4>
+              
+              <ul class="space-y-3.5 text-sm">
+                <li class="flex items-start justify-between border-b border-white/5 pb-2.5">
+                  <span class="text-slate-400">Formal Name</span>
+                  <span class="font-semibold text-white">MD. Rakin Ashab</span>
+                </li>
+                <li class="flex items-start justify-between border-b border-white/5 pb-2.5">
+                  <span class="text-slate-400">Primary Roles</span>
+                  <span class="text-right font-medium text-slate-200">Entrepreneur &bull; Hospitality Student</span>
+                </li>
+                <li class="flex items-start justify-between border-b border-white/5 pb-2.5">
+                  <span class="text-slate-400">Current Base</span>
+                  <span class="font-medium text-white">Dhaka, Bangladesh</span>
+                </li>
+                <li class="flex items-start justify-between border-b border-white/5 pb-2.5">
+                  <span class="text-slate-400">Hometown</span>
+                  <span class="font-medium text-slate-200">Jashore, Bangladesh</span>
+                </li>
+                <li class="flex items-start justify-between">
+                  <span class="text-slate-400">Primary Passions</span>
+                  <span class="text-right font-medium text-brand-300">Travel, AI Workflows, Ventures</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= ENTREPRENEURSHIP & VENTURES ================= -->
+    <section id="ventures" class="py-24 sm:py-32 px-4 sm:px-8 bg-slatebg-900/30 border-y border-white/5 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-medium mb-4">
+              <span>Ventures &amp; Initiatives</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+              Founding ventures with purpose, <span class="font-serif italic font-normal text-brand-300">creativity &amp; impact.</span>
+            </h2>
+          </div>
+          <p class="text-slate-400 text-sm max-w-sm">
+            Independent ventures founded and steered by MD. Rakin Ashab, spanning digital solutions and voluntary community support.
+          </p>
+        </div>
+
+        <!-- Ventures Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- Venture 1: One Stop Solutions -->
+          <div class="glass-card rounded-3xl p-8 sm:p-10 border border-white/10 relative overflow-hidden flex flex-col justify-between group">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div>
+              <!-- Venture Top Meta -->
+              <div class="flex items-center justify-between mb-6">
+                <span class="px-3.5 py-1.5 rounded-xl text-xs font-bold tracking-wider uppercase bg-brand-400/10 border border-brand-400/30 text-brand-300">
+                  Founder &amp; Agency Lead
+                </span>
+                <span class="text-xs text-slate-400 font-medium">Digital Agency</span>
               </div>
-              <div class="info-row">
-                <span class="info-label">WhatsApp &amp; Phone</span>
-                <span class="info-val">
-                  <a href="https://wa.me/8801936106621" target="_blank" rel="noopener">+880 1936-106621</a>
+
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3 group-hover:text-brand-300 transition-colors">
+                One Stop Solutions
+              </h3>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 font-light">
+                <strong class="text-white font-medium">My independent digital agency</strong> built to provide end-to-end digital growth, creative design, and strategic media solutions for growing brands, startups, and institutions. As founder, I lead client engagements, campaign design, and multi-disciplinary creative delivery.
+              </p>
+
+              <!-- Services Matrix / Core Pillars -->
+              <div class="grid grid-cols-2 gap-3 mb-8">
+                <div class="p-3 rounded-xl bg-slatebg-850 border border-white/5 flex items-center gap-2.5">
+                  <div class="w-2 h-2 rounded-full bg-brand-400"></div>
+                  <span class="text-xs font-medium text-slate-200">Digital Marketing</span>
+                </div>
+                <div class="p-3 rounded-xl bg-slatebg-850 border border-white/5 flex items-center gap-2.5">
+                  <div class="w-2 h-2 rounded-full bg-sky-400"></div>
+                  <span class="text-xs font-medium text-slate-200">Web Development</span>
+                </div>
+                <div class="p-3 rounded-xl bg-slatebg-850 border border-white/5 flex items-center gap-2.5">
+                  <div class="w-2 h-2 rounded-full bg-amber-400"></div>
+                  <span class="text-xs font-medium text-slate-200">Graphic Design</span>
+                </div>
+                <div class="p-3 rounded-xl bg-slatebg-850 border border-white/5 flex items-center gap-2.5">
+                  <div class="w-2 h-2 rounded-full bg-purple-400"></div>
+                  <span class="text-xs font-medium text-slate-200">Video Editing</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Badge & Interaction -->
+            <div class="pt-6 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs text-slate-400 font-medium flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Active Agency Operations
+              </span>
+              <a href="#contact" class="text-xs font-semibold text-brand-300 hover:text-white flex items-center gap-1 transition-colors">
+                <span>Inquire for Collaboration</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+
+          </div>
+
+
+          <!-- Venture 2: Blood Lagbe -->
+          <div class="glass-card rounded-3xl p-8 sm:p-10 border border-white/10 relative overflow-hidden flex flex-col justify-between group">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div>
+              <!-- Venture Top Meta -->
+              <div class="flex items-center justify-between mb-6">
+                <span class="px-3.5 py-1.5 rounded-xl text-xs font-bold tracking-wider uppercase bg-rose-500/10 border border-rose-500/30 text-rose-300">
+                  Voluntary Social Initiative
+                </span>
+                <span class="text-xs text-slate-400 font-medium">Healthcare Access</span>
+              </div>
+
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3 group-hover:text-rose-300 transition-colors">
+                Blood Lagbe
+              </h3>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 font-light">
+                A community-centered voluntary blood donor directory web app initiative created to bridge urgent medical requirements with verified local blood donors across Bangladesh. Conceived to eliminate frantic social media searches during medical emergencies and save lives in real time.
+              </p>
+
+              <!-- Impact Highlights -->
+              <div class="space-y-3 mb-8">
+                <div class="p-3.5 rounded-xl bg-slatebg-850 border border-white/5 flex items-start gap-3">
+                  <div class="w-7 h-7 rounded-lg bg-rose-500/20 text-rose-300 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-semibold text-white">Rapid Donor Directory</h5>
+                    <p class="text-xs text-slate-400">Structured by blood group (A+, B+, O+, AB+, etc.) and location proximity.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slatebg-850 border border-white/5 flex items-start gap-3">
+                  <div class="w-7 h-7 rounded-lg bg-sky-500/20 text-sky-300 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-semibold text-white">Direct Voluntary Connection</h5>
+                    <p class="text-xs text-slate-400">Eliminating intermediaries to empower patients' families with immediate direct contact.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Badge & Action -->
+            <div class="pt-6 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs text-slate-400 font-medium flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-rose-400"></span> Voluntary Humanitarian Mission
+              </span>
+              <span class="text-xs font-semibold text-rose-300">Public Good Initiative</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PROFESSIONAL EXPERIENCE ================= -->
+    <section id="experience" class="py-24 sm:py-32 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-medium mb-4">
+            <span>Career Journey &amp; Client Relations</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Professional roles defined by <span class="font-serif italic font-normal text-brand-300">trust &amp; communication.</span>
+          </h2>
+          <p class="text-slate-400 text-base mt-3 font-light">
+            Hands-on professional milestones across high-touch customer consultation, global education pathways, and tourism logistics.
+          </p>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="relative pl-6 sm:pl-8 border-l border-white/10 space-y-12 max-w-4xl">
+          
+          <!-- Role 1: Customer Relations Officer at Creative Tours & Travels -->
+          <div class="relative group">
+            <!-- Timeline Pin -->
+            <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-brand-400 border-4 border-slatebg-950 group-hover:scale-125 transition-transform duration-200"></div>
+
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/10">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div>
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">Customer Relations Officer</h3>
+                  <p class="text-brand-300 font-medium text-sm sm:text-base">Creative Tours &amp; Travels &bull; Dhaka</p>
+                </div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-300 w-fit">
+                  <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>April 2026 &ndash; November 2026</span>
+                </div>
+              </div>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-5 font-light">
+                Spearheaded comprehensive client relationship management, tailored itinerary advisory, and end-to-end customer satisfaction for high-expectation leisure and corporate travelers. Successfully completed this key tenure in November 2026.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-brand-400 font-bold">&check;</span>
+                  <span>Personalized travel consulting &amp; itinerary curation</span>
+                </div>
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-brand-400 font-bold">&check;</span>
+                  <span>Swift conflict resolution &amp; flight/hotel coordination</span>
+                </div>
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-brand-400 font-bold">&check;</span>
+                  <span>Client retention and premium relationship management</span>
+                </div>
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-brand-400 font-bold">&check;</span>
+                  <span>Cross-functional communication with international partners</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: Junior Counselor at Samish Global Education -->
+          <div class="relative group">
+            <!-- Timeline Pin -->
+            <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-500 border-4 border-slatebg-950 group-hover:scale-125 transition-transform duration-200"></div>
+
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/10">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div>
+                  <h3 class="text-xl sm:text-2xl font-bold text-white">Junior Counselor</h3>
+                  <p class="text-sky-300 font-medium text-sm sm:text-base">Samish Global Education &bull; Dhaka</p>
+                </div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-slate-300 w-fit">
+                  <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>2025 &ndash; April 2026</span>
+                </div>
+              </div>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-5 font-light">
+                Guided prospective international students through educational consultation, course selection, and admissions compliance. Handled direct parent-student counseling sessions with empathy, structured guidance, and procedural precision.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-sky-400 font-bold">&check;</span>
+                  <span>One-on-one academic consultation &amp; profile assessment</span>
+                </div>
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-sky-400 font-bold">&check;</span>
+                  <span>Document verification &amp; application workflow tracking</span>
+                </div>
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-sky-400 font-bold">&check;</span>
+                  <span>Liaison between candidates and global universities</span>
+                </div>
+                <div class="flex items-center gap-2 p-2.5 rounded-lg bg-slatebg-850/60 border border-white/5">
+                  <span class="text-sky-400 font-bold">&check;</span>
+                  <span>Active interpersonal trust-building and mentorship</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= EDUCATION & HOSPITALITY ================= -->
+    <section id="education" class="py-24 sm:py-32 px-4 sm:px-8 bg-slatebg-900/30 border-y border-white/5 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-medium mb-4">
+            <span>Academic Qualifications</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Hospitality excellence &amp; <span class="font-serif italic font-normal text-brand-300">industry mastery.</span>
+          </h2>
+          <p class="text-slate-400 text-base mt-3 font-light">
+            Formal training in international hospitality operations, culinary fundamentals, and service leadership.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Visual Photo from Update Hotel Management Institute -->
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl overflow-hidden glass-card p-3 border border-white/10 shadow-2xl relative group">
+              <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-slatebg-900">
+                <img 
+                  src="images/hospitality-1.jpg" 
+                  alt="MD. Rakin Ashab - Diploma in Hotel Management at Update Hotel Management Institute" 
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  onerror="this.onerror=null; this.src='assets/media_1795616037402_987ad619.jpg';"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slatebg-950/85 via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl backdrop-blur-md bg-slatebg-900/80 border border-white/10">
+                  <span class="text-xs uppercase tracking-wider font-bold text-brand-400 block">Practical Training Session</span>
+                  <span class="text-sm font-semibold text-white">Culinary Arts &amp; Food Operations</span>
+                  <span class="text-xs text-slate-400 block mt-0.5">Update Hotel Management Institute</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Credential Card -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="glass-card rounded-3xl p-8 sm:p-10 border border-white/10 relative overflow-hidden">
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <span class="px-3.5 py-1.5 rounded-xl text-xs font-bold tracking-wider uppercase bg-brand-400/10 border border-brand-400/30 text-brand-300">
+                  Professional Diploma
+                </span>
+                <span class="text-xs font-mono text-slate-400 bg-white/5 px-3 py-1 rounded-lg border border-white/10">
+                  Started 2025 &bull; In Progress
                 </span>
               </div>
-              <div class="info-row">
-                <span class="info-label">Direct Email</span>
-                <span class="info-val">
-                  <a href="mailto:contact@rakin.online">contact@rakin.online</a>
-                </span>
-              </div>
-            </div>
 
-            <!-- Social pill box -->
-            <div class="direct-info-card" style="padding:1.5rem;">
-              <span class="info-label" style="margin-bottom:0.75rem;">Verified Channels</span>
-              <div style="display:flex; gap:0.75rem;">
-                <a href="https://github.com/rakinashab-oss" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/mohammad-rakin-ashab-54082421a" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="https://www.instagram.com/rakin_ashab" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                </a>
-                <a href="mailto:contact@rakin.online" class="social-link" aria-label="Email">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
+                Diploma in Hotel Management
+              </h3>
+
+              <p class="text-lg text-brand-300 font-medium mb-6">
+                Update Hotel Management Institute, Dhaka
+              </p>
+
+              <!-- Cohort & Credential Tokens -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <span class="text-xs text-slate-400 block uppercase tracking-wider mb-1">Batch Cohort</span>
+                  <span class="text-base font-bold text-white">40th Batch</span>
+                </div>
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <span class="text-xs text-slate-400 block uppercase tracking-wider mb-1">Student Identification</span>
+                  <span class="text-base font-mono font-bold text-brand-300">UHM-2511-385</span>
+                </div>
+              </div>
+
+              <!-- Curricular Disciplines -->
+              <h4 class="text-xs uppercase tracking-wider font-bold text-slate-400 mb-3">Key Hospitality Modules</h4>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-slate-200">Front Office Management</span>
+                <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-slate-200">Food &amp; Beverage Operations</span>
+                <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-slate-200">Guest Relations &amp; Etiquette</span>
+                <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-slate-200">Culinary Fundamentals</span>
+                <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-slate-200">Housekeeping &amp; Property Standards</span>
+                <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-slate-200">Hospitality Leadership</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= TRAVEL & WANDERLUST ================= -->
+    <section id="travel" class="py-24 sm:py-32 px-4 sm:px-8 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-medium mb-4">
+              <span>Personal Passions &amp; Horizon</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+              A deep love for traveling, <span class="font-serif italic font-normal text-brand-300">exploring new cultures &amp; environments.</span>
+            </h2>
+          </div>
+          <p class="text-slate-400 text-sm max-w-sm">
+            Travel isn't merely recreation for me—it's an education in adaptability, cultural appreciation, and expansive thinking.
+          </p>
+        </div>
+
+        <!-- Travel Photo Gallery & Philosophy Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Travel Photo 1: Hilltop Greenery -->
+          <div class="md:col-span-4 group">
+            <div class="rounded-3xl overflow-hidden glass-card p-2.5 border border-white/10 shadow-2xl relative">
+              <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-slatebg-900">
+                <img 
+                  src="images/travel-1.jpg" 
+                  alt="MD. Rakin Ashab exploring scenic hill vistas" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  onerror="this.onerror=null; this.src='assets/media_1795616037461_206f8081.jpg';"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slatebg-950/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl backdrop-blur-md bg-slatebg-900/80 border border-white/10">
+                  <span class="text-xs font-semibold text-white block">Highlands &amp; Natural Vistas</span>
+                  <span class="text-[11px] text-brand-300">Embracing fresh perspectives and serene heights</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- WhatsApp Inquiry Form Card -->
-          <div class="form-card fade-up">
-            <div class="form-header">
-              <h3 class="form-title">Send Direct WhatsApp Inquiry</h3>
-              <p class="form-helper">
-                Your message will open directly in WhatsApp (+880 1936-106621).
+          <!-- Travel Photo 2: Sunset Beach -->
+          <div class="md:col-span-4 group">
+            <div class="rounded-3xl overflow-hidden glass-card p-2.5 border border-white/10 shadow-2xl relative">
+              <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-slatebg-900">
+                <img 
+                  src="images/travel-2.jpg" 
+                  alt="MD. Rakin Ashab at golden hour beach" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  onerror="this.onerror=null; this.src='assets/media_1795616037458_392e2e2c.jpg';"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slatebg-950/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl backdrop-blur-md bg-slatebg-900/80 border border-white/10">
+                  <span class="text-xs font-semibold text-white block">Coastal Horizons &amp; Sunsets</span>
+                  <span class="text-[11px] text-amber-300">Golden hour reflections by the sea</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Travel Philosophy Column -->
+          <div class="md:col-span-4 flex flex-col justify-between space-y-6">
+            <div class="glass-card rounded-2xl p-6 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Cross-Cultural Curiosity</h3>
+              <p class="text-xs text-slate-300 leading-relaxed font-light">
+                Discovering how communities live, work, and welcome guests across diverse regions informs my hospitality mindset and enriches my entrepreneurial intuition.
               </p>
             </div>
 
-            <form id="whatsapp-inquiry-form" novalidate>
-              <div class="form-error-alert" id="form-error-box" role="alert">
-                Please fill in your name, contact info, and message before sending.
+            <div class="glass-card rounded-2xl p-6 border border-white/10">
+              <div class="w-10 h-10 rounded-xl bg-sky-400/10 border border-sky-400/20 text-sky-300 flex items-center justify-center mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Mindful Exploration</h3>
+              <p class="text-xs text-slate-300 leading-relaxed font-light">
+                From mountain ranges to quiet coastlines, stepping into new environments sparks creativity, tests resourcefulness, and sharpens leadership under any situation.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CORE STRENGTHS & TOOLS MATRIX ================= -->
+    <section id="skills" class="py-24 sm:py-32 px-4 sm:px-8 bg-slatebg-900/30 border-y border-white/5 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-medium mb-4">
+            <span>Capabilities &amp; Software Proficiency</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Core strengths, productivity tools &amp; <span class="font-serif italic font-normal text-brand-300">digital exploration.</span>
+          </h2>
+          <p class="text-slate-400 text-base mt-3 font-light">
+            Focused on human leadership, operational rigor, and modern productivity tooling.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Category 1: Core Leadership Strengths -->
+          <div class="glass-card rounded-3xl p-8 border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-brand-400/15 border border-brand-400/30 text-brand-300 flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
               </div>
 
-              <!-- Name -->
-              <div class="form-group">
-                <label for="form-name" class="form-label">Your Name <span class="req">*</span></label>
-                <input type="text" id="form-name" class="form-input" placeholder="e.g. Sarah Jenkins" autocomplete="name" required>
+              <h3 class="text-xl font-bold text-white mb-2">Core Strengths</h3>
+              <p class="text-xs text-slate-400 mb-6">Interpersonal and leadership foundations built through hospitality and business.</p>
+
+              <div class="space-y-3.5">
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <h4 class="text-sm font-semibold text-white mb-1">Communication</h4>
+                  <p class="text-xs text-slate-300 font-light">Articulate verbal and written exchange, high empathy with guests, students, and clients.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <h4 class="text-sm font-semibold text-white mb-1">Leadership</h4>
+                  <p class="text-xs text-slate-300 font-light">Guiding cross-functional agency projects, steering team members, and taking initiative.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <h4 class="text-sm font-semibold text-white mb-1">Management</h4>
+                  <p class="text-xs text-slate-300 font-light">Resource allocation, schedule optimization, and guest experience supervision.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Office & Productivity Suites -->
+          <div class="glass-card rounded-3xl p-8 border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-400/15 border border-sky-400/30 text-sky-300 flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
               </div>
 
-              <!-- Contact Info -->
-              <div class="form-group">
-                <label for="form-contact" class="form-label">Email or Contact Info <span class="req">*</span></label>
-                <input type="text" id="form-contact" class="form-input" placeholder="e.g. sarah@example.com or phone" autocomplete="email" required>
+              <h3 class="text-xl font-bold text-white mb-2">Productivity &amp; Data</h3>
+              <p class="text-xs text-slate-400 mb-6">Standard business documentation, spreadsheet modeling, and institutional reporting.</p>
+
+              <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 rounded-xl bg-slatebg-850 border border-white/5">
+                  <span class="text-xs font-semibold text-white">Microsoft Word</span>
+                  <span class="text-[11px] text-sky-300 font-medium">Documentation</span>
+                </div>
+                <div class="flex items-center justify-between p-3 rounded-xl bg-slatebg-850 border border-white/5">
+                  <span class="text-xs font-semibold text-white">Microsoft Excel</span>
+                  <span class="text-[11px] text-emerald-300 font-medium">Formulas &amp; Analysis</span>
+                </div>
+                <div class="flex items-center justify-between p-3 rounded-xl bg-slatebg-850 border border-white/5">
+                  <span class="text-xs font-semibold text-white">Microsoft PowerPoint</span>
+                  <span class="text-[11px] text-amber-300 font-medium">Presentations</span>
+                </div>
+                <div class="flex items-center justify-between p-3 rounded-xl bg-slatebg-850 border border-white/5">
+                  <span class="text-xs font-semibold text-white">Microsoft Access</span>
+                  <span class="text-[11px] text-rose-300 font-medium">Relational Records</span>
+                </div>
+                <div class="flex items-center justify-between p-3 rounded-xl bg-slatebg-850 border border-white/5">
+                  <span class="text-xs font-semibold text-white">Google Sheets</span>
+                  <span class="text-[11px] text-emerald-300 font-medium">Cloud Collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Creative & Emerging Tech Exploration -->
+          <div class="glass-card rounded-3xl p-8 border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-purple-400/15 border border-purple-400/30 text-purple-300 flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
               </div>
 
-              <!-- Subject / Service Needed -->
-              <div class="form-group">
-                <label for="form-service" class="form-label">Subject / Service Needed</label>
-                <select id="form-service" class="form-select">
-                  <option value="ONE STOP SOLUTION — Digital Agency &amp; Branding">ONE STOP SOLUTION — Digital Agency &amp; Branding</option>
-                  <option value="Web &amp; Creative Design Solutions">Web &amp; Creative Design Solutions</option>
-                  <option value="Visa Processing &amp; Travel Consultation">Visa Processing &amp; Travel Consultation</option>
-                  <option value="Hospitality &amp; Business Collaboration">Hospitality &amp; Business Collaboration</option>
-                </select>
-              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Design &amp; AI Exploration</h3>
+              <p class="text-xs text-slate-400 mb-6">Digital design tooling and active experimentation with AI platforms and web interfaces.</p>
 
-              <!-- Project Details / Message -->
-              <div class="form-group">
-                <label for="form-message" class="form-label">Project Details or Message <span class="req">*</span></label>
-                <textarea id="form-message" class="form-textarea" placeholder="Briefly describe what you would like to collaborate on..." required></textarea>
-              </div>
+              <div class="space-y-3.5">
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <div class="flex items-center justify-between mb-1">
+                    <h4 class="text-sm font-semibold text-white">Canva</h4>
+                    <span class="text-[11px] text-purple-300 font-medium">Visual Design</span>
+                  </div>
+                  <p class="text-xs text-slate-300 font-light">Rapid marketing assets, social media branding, presentations, and visual collateral.</p>
+                </div>
 
-              <button type="submit" class="form-submit-btn">
-                <span>Send via WhatsApp</span>
-                <span aria-hidden="true">→</span>
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <div class="flex items-center justify-between mb-1">
+                    <h4 class="text-sm font-semibold text-white">AI Tools &amp; Prompting</h4>
+                    <span class="text-[11px] text-brand-300 font-medium">Productivity</span>
+                  </div>
+                  <p class="text-xs text-slate-300 font-light">Leveraging generative AI assistants, creative prompt workflows, and automated drafting.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slatebg-850 border border-white/5">
+                  <div class="flex items-center justify-between mb-1">
+                    <h4 class="text-sm font-semibold text-white">Web Platforms &amp; Workflows</h4>
+                    <span class="text-[11px] text-sky-300 font-medium">Interfaces</span>
+                  </div>
+                  <p class="text-xs text-slate-300 font-light">Exploring modern web portals, digital tools, and no-code/web ecosystems for operational speed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CONTACT & LOCATION SECTION ================= -->
+    <section id="contact" class="py-24 sm:py-32 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-medium mb-4">
+            <span>Direct Inquiries &amp; Collaboration</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Let's connect and build <span class="font-serif italic font-normal text-brand-300">something extraordinary.</span>
+          </h2>
+          <p class="text-slate-400 text-base mt-3 font-light">
+            Available for venture collaborations, agency inquiries, hospitality consultations, or networking.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Details Cards -->
+          <div class="lg:col-span-5 space-y-5">
+            
+            <!-- Email Card -->
+            <div class="glass-card rounded-2xl p-6 border border-white/10 flex items-start justify-between gap-4 group">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-400/10 border border-brand-400/20 text-brand-300 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-0.5">Official Email</span>
+                  <a href="mailto:contact@rakin.online" class="text-base sm:text-lg font-bold text-white hover:text-brand-300 transition-colors break-all">
+                    contact@rakin.online
+                  </a>
+                  <span class="text-xs text-slate-400 block mt-1">Direct inquiries &amp; proposals</span>
+                </div>
+              </div>
+              <button onclick="copyToClipboard('contact@rakin.online', 'Email address copied!')" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-colors" title="Copy email address">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
               </button>
-            </form>
+            </div>
+
+            <!-- Phone / WhatsApp Card -->
+            <div class="glass-card rounded-2xl p-6 border border-white/10 flex items-start justify-between gap-4 group">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-0.5">Phone &amp; WhatsApp</span>
+                  <a href="tel:+8801936106621" class="text-base sm:text-lg font-bold text-white hover:text-emerald-300 transition-colors">
+                    +880 1936106621
+                  </a>
+                  <div class="mt-2 flex items-center gap-2">
+                    <a href="https://wa.me/8801936106621?text=Hello%20MD.%20Rakin%20Ashab" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 transition-all border border-emerald-500/30">
+                      <span>Open WhatsApp</span>
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button onclick="copyToClipboard('+8801936106621', 'Phone number copied!')" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-colors" title="Copy phone number">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+              </button>
+            </div>
+
+            <!-- Location Card -->
+            <div class="glass-card rounded-2xl p-6 border border-white/10 flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-400/10 border border-sky-400/20 text-sky-300 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-0.5">Location &amp; Roots</span>
+                <p class="text-base font-bold text-white">Dhaka, Bangladesh</p>
+                <p class="text-xs text-brand-300 mt-1">Originally from Jashore, Bangladesh</p>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Interactive Contact / Message Form -->
+          <div class="lg:col-span-7">
+            <div class="glass-card rounded-3xl p-8 sm:p-10 border border-white/10 shadow-2xl relative">
+              <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Send a Direct Inquiry</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-8 font-light">
+                Fill out the details below to initiate a direct message directly to MD. Rakin Ashab.
+              </p>
+
+              <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name *</label>
+                    <input 
+                      type="text" 
+                      id="senderName" 
+                      required 
+                      placeholder="e.g. Sarah Jenkins"
+                      class="w-full px-4 py-3 rounded-xl bg-slatebg-850 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brand-400 text-sm transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Email *</label>
+                    <input 
+                      type="email" 
+                      id="senderEmail" 
+                      required 
+                      placeholder="e.g. sarah@example.com"
+                      class="w-full px-4 py-3 rounded-xl bg-slatebg-850 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brand-400 text-sm transition-colors"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">Topic / Area of Interest</label>
+                  <select 
+                    id="senderSubject" 
+                    class="w-full px-4 py-3 rounded-xl bg-slatebg-850 border border-white/10 text-slate-200 focus:outline-none focus:border-brand-400 text-sm transition-colors"
+                  >
+                    <option value="One Stop Solutions Agency Inquiry">One Stop Solutions (Agency Services)</option>
+                    <option value="Blood Lagbe Initiative Collaboration">Blood Lagbe (Community Collaboration)</option>
+                    <option value="Hospitality & Client Relations Opportunity">Hospitality Consultation</option>
+                    <option value="General Professional Networking">General Professional Networking</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">Message *</label>
+                  <textarea 
+                    id="senderMessage" 
+                    rows="4" 
+                    required 
+                    placeholder="Describe your inquiry, project scope, or message..."
+                    class="w-full px-4 py-3 rounded-xl bg-slatebg-850 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brand-400 text-sm transition-colors resize-none"
+                  ></textarea>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                  <span class="text-xs text-slate-400">
+                    Routing to: <strong class="text-brand-300">contact@rakin.online</strong>
+                  </span>
+                  <button 
+                    type="submit" 
+                    class="w-full sm:w-auto px-7 py-3.5 rounded-xl text-sm font-semibold bg-brand-400 hover:bg-brand-300 text-slatebg-950 transition-all duration-200 shadow-lg shadow-brand-400/20 hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    <span>Send Message</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Feedback Banner -->
+              <div id="formFeedback" class="hidden mt-6 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-200 text-xs sm:text-sm">
+                Preparing your default email client with your message to MD. Rakin Ashab...
+              </div>
+
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
   </main>
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <a href="#hero" class="brand-mark">
-          <span class="monogram-badge" aria-hidden="true">MRA</span>
-          <span class="brand-name">
-            <span class="brand-name-full">MD. Rakin Ashab</span>
-            <span class="brand-name-sub">Dhaka, Bangladesh</span>
-          </span>
-        </a>
 
-        <a href="#hero" class="back-to-top-link" id="back-to-top">
-          <span>Back to top</span>
-          <span aria-hidden="true">↑</span>
-        </a>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="copyright-text">
-          &copy; 2026 MD. Rakin Ashab &bull; Founder @ ONE STOP SOLUTION. All rights reserved.
-        </p>
-
-        <div style="display:flex; align-items:center; gap:1.25rem;">
-          <a href="https://github.com/rakinashab-oss" target="_blank" rel="noopener" class="nav-link" style="padding:0; font-size:0.8125rem;">GitHub</a>
-          <a href="https://www.linkedin.com/in/mohammad-rakin-ashab-54082421a" target="_blank" rel="noopener" class="nav-link" style="padding:0; font-size:0.8125rem;">LinkedIn</a>
-          <a href="https://www.instagram.com/rakin_ashab" target="_blank" rel="noopener" class="nav-link" style="padding:0; font-size:0.8125rem;">Instagram</a>
-          <a href="https://wa.me/8801936106621" target="_blank" rel="noopener" class="nav-link" style="padding:0; font-size:0.8125rem;">WhatsApp</a>
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 bg-slatebg-950 py-12 px-4 sm:px-8 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-brand-400 flex items-center justify-center text-slatebg-950 font-bold text-sm">
+          RA
+        </div>
+        <div>
+          <span class="font-bold text-white text-sm">MD. Rakin Ashab</span>
+          <span class="block text-[11px] text-slate-500">&copy; 2026 MD. Rakin Ashab. All rights reserved.</span>
         </div>
       </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#about" class="hover:text-brand-300 transition-colors">About</a>
+        <a href="#ventures" class="hover:text-brand-300 transition-colors">Ventures</a>
+        <a href="#experience" class="hover:text-brand-300 transition-colors">Experience</a>
+        <a href="#travel" class="hover:text-brand-300 transition-colors">Travel</a>
+        <a href="#contact" class="hover:text-brand-300 transition-colors">Contact</a>
+      </div>
+
+      <div>
+        <a href="#hero" class="p-2.5 rounded-xl glass-card border border-white/10 hover:border-brand-400/40 text-slate-300 hover:text-white transition-all inline-flex items-center gap-1.5" title="Back to top">
+          <span>Back to Top</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+        </a>
+      </div>
+
     </div>
   </footer>
 
-  <!-- =========================================================
-       VANILLA JAVASCRIPT
-       Zero dependencies, robust event handling & accessibility
-       ========================================================= -->
+
+  <!-- Toast Notification element for copy-to-clipboard -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none px-4 py-3 rounded-xl bg-slatebg-850 border border-brand-400/40 shadow-2xl flex items-center gap-2 text-xs font-medium text-white">
+    <svg class="w-4 h-4 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span id="toastMsg">Copied!</span>
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
   <script>
-    (function() {
-      'use strict';
+    // Mobile navigation toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconOpen = document.getElementById('menu-icon-open');
+    const menuIconClose = document.getElementById('menu-icon-close');
 
-      /* -----------------------------------------------------------
-         1. THEME TOGGLE (Local Storage + System Preference)
-         ----------------------------------------------------------- */
-      const htmlEl = document.documentElement;
-      const themeBtn = document.getElementById('theme-toggle-btn');
-      const sunIcon = themeBtn ? themeBtn.querySelector('.sun-icon') : null;
-      const moonIcon = themeBtn ? themeBtn.querySelector('.moon-icon') : null;
-      const metaThemeColor = document.getElementById('meta-theme-color');
-
-      function applyTheme(theme) {
-        htmlEl.setAttribute('data-theme', theme);
-        if (theme === 'dark') {
-          if (sunIcon) sunIcon.style.display = 'none';
-          if (moonIcon) moonIcon.style.display = 'block';
-          if (metaThemeColor) metaThemeColor.setAttribute('content', '#121211');
-        } else {
-          if (sunIcon) sunIcon.style.display = 'block';
-          if (moonIcon) moonIcon.style.display = 'none';
-          if (metaThemeColor) metaThemeColor.setAttribute('content', '#F7F5F0');
-        }
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuIconOpen.classList.add('hidden');
+        menuIconClose.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
       }
+    });
 
-      // Initialize theme from storage or system
-      let activeTheme = 'light';
-      try {
-        const savedTheme = localStorage.getItem('mra_portfolio_theme');
-        if (savedTheme) {
-          activeTheme = savedTheme;
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          activeTheme = 'dark';
-        }
-      } catch (err) {
-        console.warn('LocalStorage unavailable for theme state:', err);
-      }
-      applyTheme(activeTheme);
-
-      if (themeBtn) {
-        themeBtn.addEventListener('click', function() {
-          const nextTheme = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-          applyTheme(nextTheme);
-          try {
-            localStorage.setItem('mra_portfolio_theme', nextTheme);
-          } catch (err) {
-            console.warn('LocalStorage save failed:', err);
-          }
-        });
-      }
-
-      /* -----------------------------------------------------------
-         2. ROTATING SUBTITLE (Subtle fade/slide swap)
-         ----------------------------------------------------------- */
-      const subtitles = [
-        "Digital Entrepreneur",
-        "Curious Tech Explorer",
-        "Hospitality Professional"
-      ];
-      let subIdx = 0;
-      const subEl = document.getElementById('rotating-subtitle');
-
-      if (subEl) {
-        setInterval(function() {
-          subEl.classList.add('is-changing');
-          setTimeout(function() {
-            subIdx = (subIdx + 1) % subtitles.length;
-            subEl.textContent = subtitles[subIdx];
-            subEl.classList.remove('is-changing');
-          }, 350);
-        }, 3200);
-      }
-
-      /* -----------------------------------------------------------
-         3. MOBILE NAVIGATION DRAWER
-         ----------------------------------------------------------- */
-      const menuBtn = document.getElementById('mobile-menu-toggle');
-      const drawer = document.getElementById('mobile-drawer');
-
-      if (menuBtn && drawer) {
-        menuBtn.addEventListener('click', function() {
-          const isOpen = drawer.classList.contains('is-open');
-          if (isOpen) {
-            drawer.classList.remove('is-open');
-            drawer.setAttribute('hidden', '');
-            menuBtn.setAttribute('aria-expanded', 'false');
-          } else {
-            drawer.removeAttribute('hidden');
-            requestAnimationFrame(function() {
-              drawer.classList.add('is-open');
-            });
-            menuBtn.setAttribute('aria-expanded', 'true');
-          }
-        });
-
-        // Close drawer on link click
-        drawer.querySelectorAll('a').forEach(function(link) {
-          link.addEventListener('click', function() {
-            drawer.classList.remove('is-open');
-            drawer.setAttribute('hidden', '');
-            menuBtn.setAttribute('aria-expanded', 'false');
-          });
-        });
-      }
-
-      /* -----------------------------------------------------------
-         4. ACTIVE NAVIGATION HIGHLIGHTING (IntersectionObserver)
-         ----------------------------------------------------------- */
-      const navLinks = document.querySelectorAll('.nav-desktop .nav-link');
-      const sections = document.querySelectorAll('section[id], header[id]');
-
-      if ('IntersectionObserver' in window && navLinks.length) {
-        const observerOptions = {
-          root: null,
-          rootMargin: '-30% 0px -50% 0px',
-          threshold: 0
-        };
-
-        const sectionObserver = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              const id = entry.target.getAttribute('id');
-              navLinks.forEach(function(link) {
-                if (link.getAttribute('href') === '#' + id) {
-                  link.classList.add('active');
-                } else {
-                  link.classList.remove('active');
-                }
-              });
-            }
-          });
-        }, observerOptions);
-
-        sections.forEach(function(sec) {
-          sectionObserver.observe(sec);
-        });
-      }
-
-      /* -----------------------------------------------------------
-         5. ACCORDION (One Open at a Time with Pure Height Animation)
-         ----------------------------------------------------------- */
-      const accordionTriggers = document.querySelectorAll('.accordion-trigger');
-
-      accordionTriggers.forEach(function(trigger) {
-        trigger.addEventListener('click', function() {
-          const isExpanded = this.getAttribute('aria-expanded') === 'true';
-          const targetId = this.getAttribute('aria-controls');
-          const panel = document.getElementById(targetId);
-
-          // Close all other panels
-          accordionTriggers.forEach(function(otherTrigger) {
-            if (otherTrigger !== trigger) {
-              otherTrigger.setAttribute('aria-expanded', 'false');
-              const otherPanel = document.getElementById(otherTrigger.getAttribute('aria-controls'));
-              if (otherPanel) otherPanel.setAttribute('data-open', 'false');
-            }
-          });
-
-          // Toggle current
-          if (isExpanded) {
-            this.setAttribute('aria-expanded', 'false');
-            if (panel) panel.setAttribute('data-open', 'false');
-          } else {
-            this.setAttribute('aria-expanded', 'true');
-            if (panel) panel.setAttribute('data-open', 'true');
-          }
-        });
+    // Close mobile menu on clicking any navigation link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
       });
+    });
 
-      /* -----------------------------------------------------------
-         6. TIMELINE: BUTTON SCROLL & MOUSE DRAG
-         ----------------------------------------------------------- */
-      const timelineTrack = document.getElementById('timeline-track-container');
-      const prevBtn = document.getElementById('timeline-prev-btn');
-      const nextBtn = document.getElementById('timeline-next-btn');
-
-      if (timelineTrack && prevBtn && nextBtn) {
-        const scrollAmount = 360;
-
-        prevBtn.addEventListener('click', function() {
-          timelineTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        });
-
-        nextBtn.addEventListener('click', function() {
-          timelineTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        });
-
-        // Mouse Drag-to-Scroll support
-        let isDown = false;
-        let startX, scrollLeft;
-
-        timelineTrack.addEventListener('mousedown', function(e) {
-          isDown = true;
-          startX = e.pageX - timelineTrack.offsetLeft;
-          scrollLeft = timelineTrack.scrollLeft;
-        });
-
-        timelineTrack.addEventListener('mouseleave', function() {
-          isDown = false;
-        });
-
-        timelineTrack.addEventListener('mouseup', function() {
-          isDown = false;
-        });
-
-        timelineTrack.addEventListener('mousemove', function(e) {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - timelineTrack.offsetLeft;
-          const walk = (x - startX) * 1.5;
-          timelineTrack.scrollLeft = scrollLeft - walk;
-        });
+    // Sticky navbar backdrop effect on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.classList.add('py-2');
+        navbar.classList.remove('py-4');
+      } else {
+        navbar.classList.add('py-4');
+        navbar.classList.remove('py-2');
       }
+    });
 
-      /* -----------------------------------------------------------
-         7. STATS NUMBER COUNTER ANIMATION
-         ----------------------------------------------------------- */
-      const statValueEl = document.querySelector('.stat-value[data-target]');
-      if (statValueEl && 'IntersectionObserver' in window) {
-        let counted = false;
-        const countObserver = new IntersectionObserver(function(entries) {
-          if (entries[0].isIntersecting && !counted) {
-            counted = true;
-            const target = parseInt(statValueEl.getAttribute('data-target'), 10) || 3;
-            const suffix = statValueEl.getAttribute('data-suffix') || '';
-            let current = 0;
-            const stepTime = 120;
-            const timer = setInterval(function() {
-              current++;
-              statValueEl.textContent = current + suffix;
-              if (current >= target) {
-                clearInterval(timer);
-              }
-            }, stepTime);
-          }
-        }, { threshold: 0.5 });
-        countObserver.observe(statValueEl);
-      }
-
-      /* -----------------------------------------------------------
-         8. SCROLL REVEAL ANIMATIONS (IntersectionObserver)
-         ----------------------------------------------------------- */
-      const fadeElements = document.querySelectorAll('.fade-up');
-      if ('IntersectionObserver' in window) {
-        const revealObserver = new IntersectionObserver(function(entries, obs) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              obs.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
-
-        fadeElements.forEach(function(el) {
-          revealObserver.observe(el);
+    // Copy to clipboard helper with toast
+    function copyToClipboard(text, message) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(message || 'Copied to clipboard!');
+        }).catch(() => {
+          fallbackCopy(text, message);
         });
       } else {
-        fadeElements.forEach(function(el) {
-          el.classList.add('is-visible');
-        });
+        fallbackCopy(text, message);
       }
+    }
 
-      /* -----------------------------------------------------------
-         9. WHATSAPP INQUIRY FORM VALIDATION & REDIRECT
-         ----------------------------------------------------------- */
-      const inquiryForm = document.getElementById('whatsapp-inquiry-form');
-      const errorBox = document.getElementById('form-error-box');
+    function fallbackCopy(text, message) {
+      const tempInput = document.createElement('input');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(message || 'Copied to clipboard!');
+    }
 
-      if (inquiryForm) {
-        inquiryForm.addEventListener('submit', function(e) {
-          e.preventDefault();
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
 
-          const nameVal = (document.getElementById('form-name').value || '').trim();
-          const contactVal = (document.getElementById('form-contact').value || '').trim();
-          const serviceVal = document.getElementById('form-service').value || '';
-          const messageVal = (document.getElementById('form-message').value || '').trim();
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 2500);
+    }
 
-          if (!nameVal || !contactVal || !messageVal) {
-            if (errorBox) errorBox.style.display = 'block';
-            return;
-          }
+    // Interactive Inquiry Form handler
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('senderName').value.trim();
+      const email = document.getElementById('senderEmail').value.trim();
+      const subject = document.getElementById('senderSubject').value;
+      const message = document.getElementById('senderMessage').value.trim();
 
-          if (errorBox) errorBox.style.display = 'none';
+      const feedback = document.getElementById('formFeedback');
+      feedback.classList.remove('hidden');
 
-          // Build clean structured WhatsApp text message
-          const textPayload = 
-            `Hello MD. Rakin Ashab,\n\n` +
-            `*New Portfolio Inquiry*\n` +
-            `• *Name:* ${nameVal}\n` +
-            `• *Contact Info:* ${contactVal}\n` +
-            `• *Subject / Service:* ${serviceVal}\n\n` +
-            `*Project Details:*\n${messageVal}`;
+      const mailtoLink = `mailto:contact@rakin.online?subject=${encodeURIComponent(`[Portfolio Inquiry] ${subject} - from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nTopic: ${subject}\n\nMessage:\n${message}`)}`;
 
-          const whatsappUrl = `https://wa.me/8801936106621?text=${encodeURIComponent(textPayload)}`;
-          window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-        });
-      }
-
-    })();
+      setTimeout(() => {
+        window.location.href = mailtoLink;
+      }, 500);
+    }
   </script>
 </body>
 </html>
